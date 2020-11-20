@@ -1,29 +1,66 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 1`
 	
-## Titulo del Ejemplo 
+## Reto 1: Expresiones regulares
 
-### OBJETIVO 
+<div style="text-align: justify;">
 
-- Lo que esperamos que el alumno aprenda 
+### 1. Objetivos :dart: 
 
-#### REQUISITOS 
+- Poner en práctica el uso de expresiones regulares.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+### 2. Requisitos :clipboard:
 
-#### DESARROLLO
+1. MongoDB Compass instalado.
 
-Agrega las instrucciones generales del ejemplo o reto
+### 3. Desarrollo :rocket:
 
-<details>
+Usando la base de datos `sample_airbnblistingsAndReviews`, realiza los siguientes filtros:
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+- Propiedades que no permitan fiestas.
+- Propiedades que admitan mascotas.
+- Propiedades que no permitan fumadores.
+- Propiedades que no permitan fiestas ni fumadores.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+<details><summary>Solución</summary>
+<p>
 
-![imagen](https://picsum.photos/200/300)
+- Propiedades que no permitan fiestas.
 
+   ```json
+   {house_rules: /No Parties/i}
+   ```
+   
+   ![imagen](imagenes/s5e11.png)
+
+- Propiedades que admitan mascotas.
+
+   ```json
+   {house_rules: /Pets Allowed/i}
+   ```
+   
+   ![imagen](imagenes/s5e12.png)
+   
+- Propiedades que no permitan fumadores.
+
+   ```json
+   {house_rules: /No Smoking/i}	
+   ```
+   ![imagen](imagenes/s5e13.png) 
+   
+- Propiedades que no permitan fiestas ni fumadores.
+
+   ```json
+   {house_rules: /No Smoking|No Parties/i}
+   ```
+   
+   ![imagen](imagenes/s5e14.png)
+
+
+</p>
+</details>
+
+<br/>
+
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#notación-punto-y-arreglos)
+
+</div>

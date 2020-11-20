@@ -1,28 +1,80 @@
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejemplo 1`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+## Ejemplo 1: Agrupamientos
 
-## Titulo del Ejemplo
+<div style="text-align: justify;">
 
-### OBJETIVO
+### 1. Objetivos :dart: 
 
-- Lo que esperamos que el alumno aprenda
+- Repasar la estructura de las agregaciones de tipo `$group`.
 
-#### REQUISITOS
+### 2. Requisitos :clipboard:
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. MongoDB Compass instalado.
 
-#### DESARROLLO
+### 3. Desarrollo :rocket:
 
-Agrega las instrucciones generales del ejemplo o reto
+Para ejemplificar el concepto de agrupamiento, buscaremos  el costo promedio de una habitación de tipo casa, continuaremos usando la base de datos `sample_airbnb.listingsAndReviews`:
+   
+Necesitamos filtrar primero las propiedades de tipo casa, para ello usaremos la agregación `$match`.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
-
-![imagen](https://picsum.photos/200/300)
-
-
+   ```json
+   {
+      property_type: "House"
+   }
+   ```
+   
+   ![imagen](imagenes/s6e11.png)
+   
+Adicionalmente, necesitamos propiedades que tengan uno o más cuartos, para poder obtener el precio por habitación. Añadimos este filtro a la agregación anteior.
+   
+   ```json
+   {
+      property_type: "House",
+      bedrooms: {$gte: 1}
+   }
+   ```
+   
+   ![imagen](imagenes/s6e12.png)
+   
+Para obtener el costo de recamara de cada propiedad, debemos dividir el precio entre el número de recámaras, para esto usamos la agregación `$addFields`.
+   
+   ```json
+   {
+      costo_recamara: {$divide: ["$price", "$bedrooms"]}
+   }
+   ```
+   
+   ![imagen](imagenes/s6e13.png)
+   
+Ahora agruparemos el total de racámaras y el costo de recámara de todos los documentos usando una agregación `$group`. Dado que no estamos agrupando por un campo en específico, si no por todos los documentos, colocamos el valor `null` en el campo de agrupamiento.
+   
+   ```json
+   {
+     _id: null,
+     recamaras: {
+        $sum: 1
+     },
+     total: {
+        $sum: "$costo_recamara"
+     }
+   }
+   ```
+   
+   ![imagen](imagenes/s6e14.png)
+   
+En este caso estamos haciendo uso de dos acumuladores. El primero almacenará el resultado en un campo `recamaras` y hace uso de la función `$sum`. Podemos usar `$sum` como un contador si en lugar de colocar el nombre de un campo, colocamos un 1. De esta forma por cada documento en la colección sumará un 1, dando como total el número de documentos en la colección. En el campo `total` estamos almacenando la suma del campo `costo_recamara` que calculamos en la capa anterior.
+   
+Ahora, para obtener el costo promedio, debemos dividir el total entre el número de recámaras. Para esto usamos la agregación `$addFields`.
+   
+   ```json
+   {
+      costo_promedio: {
+        $divide: ["$total", "$recamaras"]
+      }
+   }
+   ```
+   
+   ![imagen](imagenes/s6e15.png)
+   
+[`Anterior`](../Readme.md#agrupamientos) | [`Siguiente`](../Reto-01/Readme.md)   

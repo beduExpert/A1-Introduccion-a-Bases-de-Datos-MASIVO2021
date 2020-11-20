@@ -1,29 +1,16 @@
- 
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Reto 3
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 3: Realizando operaciones con Colecciones e importando datos
 
-### OBJETIVO 
+### 1. Objetivos :dart:
+- Que el alumno cuente con una Colección para importar datos
+- Que el alumno importe datos en formato CSV a una Colección
 
-- Lo que esperamos que el alumno aprenda 
+### 2. Requisitos :clipboard:
+1. MongoDB Compass instalado
+1. Datos de conexión al Servidor MongoDB
 
-#### REQUISITOS 
+### 3. Desarrollo :rocket:
+Se deberá de crear colecciones e importar los datos de los archivos `movies.csv` y `ratings.csv`.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
-
-#### DESARROLLO
-
-Agrega las instrucciones generales del ejemplo o reto
-
-<details>
-
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
-
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
-
-![imagen](https://picsum.photos/200/300)
-
+[`Anterior`](../Ejemplo-06/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)

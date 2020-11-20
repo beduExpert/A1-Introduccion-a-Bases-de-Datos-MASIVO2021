@@ -1,29 +1,71 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 3`
 	
-## Titulo del Ejemplo 
+## Reto 3: Agrupamientos
 
-### OBJETIVO 
+<div style="text-align: justify;">
 
-- Lo que esperamos que el alumno aprenda 
+### 1. Objetivos :dart:
 
-#### REQUISITOS 
+- Escribir consultas que permitan responder a algunas preguntas.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+### 2. Requisitos :clipboard:
 
-#### DESARROLLO
+1. MySQL Workbench instalado.
 
-Agrega las instrucciones generales del ejemplo o reto
+### 3. Desarrollo :rocket:
 
-<details>
+Usando la base de datos `tienda`, escribe consultas que permitan responder las siguientes preguntas.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+- ¿Cuántos registros hay por cada uno de los puestos?
+- ¿Cuánto dinero se paga en total por puesto?
+- ¿Cuál es el número total de ventas por vendedor?
+- ¿Cuál es el número total de ventas por artículo?
+
+<details><summary>Solución</summary>
+<p>
+
+- ¿Cuántos registros hay por cada uno de los puestos?
+
+   ```sql
+   SELECT nombre, count(*)
+   FROM puesto
+   GROUP BY nombre;
+   ```
+   ![imagen](imagenes/s1wr31.png)
+
+- ¿Cuánto dinero se paga en total por puesto?
+
+   ```sql
+   SELECT nombre, sum(salario)
+   FROM puesto
+   GROUP BY nombre;
+   ```
+   ![imagen](imagenes/s2wr32.png)
+   
+- ¿Cuál es el número total de ventas por vendedor?
+
+   ```sql
+   SELECT id_empleado, count(clave) AS ventas
+   FROM venta
+   GROUP BY id_empleado;
+   ```
+   ![imagen](imagenes/s2wr33.png)
+   
+- ¿Cuál es el número total de ventas por artículo?
+   
+   ```sql
+   SELECT id_articulo, count(*)
+   FROM venta
+   GROUP BY id_articulo;
+   ```
+   
+   ![imagen](imagenes/s2wr34.png)
+
+</p>
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+<br/>
 
-![imagen](https://picsum.photos/200/300)
+[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#subconsultas)         
 
+</div>

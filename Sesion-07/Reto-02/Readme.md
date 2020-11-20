@@ -1,29 +1,34 @@
- 
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Reto 2
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 2: Importando datos a una tabla en formato CSV
 
-### OBJETIVO 
+### 1. Objetivos :dart:
+- Aplicar el procedimiento para importación de datos a una tabla
+- Validar la correcta importación de los datos
 
-- Lo que esperamos que el alumno aprenda 
+### 2. Requisitos :clipboard:
+- Servidor __MySQL__ instalado en tu equipo
 
-#### REQUISITOS 
+### 3. Desarrollo :rocket:
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+---
 
-#### DESARROLLO
+<img src="../imagenes/tabla.gif" align="right" height="170" width="200"> 
 
-Agrega las instrucciones generales del ejemplo o reto
+:warning: <ins>**IMPORTANTE**</ins>
 
-<details>
+_En este reto debes trabajar con la instancia de __MySQL__ que instalaste y configuraste en el *Prework* de la sesión_.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+_NO REALICES LOS EJEMPLOS NI RETOS EN EL SERVIDOR DE BEDU._ :pray: 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+_Si no sigues esta indicación... ¡Hay Tabla!_ :eyes:
 
-![imagen](https://picsum.photos/200/300)
+---
 
+1. Usando como base el archivo `movies.dat`, limpiarlo e importar los datos en la tabla `movies` creada en el Reto 1.
+
+1. Usando como base el archivo `ratings.dat`, limpiarlo e importar los datos en la tabla `ratings` creada en el Reto 2.
+
+<br/>
+
+[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#configuración-de-mongodb-en-la-nube)

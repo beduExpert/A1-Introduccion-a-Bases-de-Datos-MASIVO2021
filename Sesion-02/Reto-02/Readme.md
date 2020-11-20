@@ -1,29 +1,79 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 2`
 	
-## Titulo del Ejemplo 
+## Reto 2: Funciones de agrupamiento
 
-### OBJETIVO 
+<div style="text-align: justify;">
 
-- Lo que esperamos que el alumno aprenda 
+### 1. Objetivos :dart:
 
-#### REQUISITOS 
+- Escribir consultas que permitan responder a algunas preguntas.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+### 2. Requisitos :clipboard:
 
-#### DESARROLLO
+1. MySQL Workbench instalado.
 
-Agrega las instrucciones generales del ejemplo o reto
+### 3. Desarrollo :rocket:
 
-<details>
+Usando la base de datos `tienda`, escribe consultas que permitan responder las siguientes preguntas.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+- ¿Cuál es el promedio de salario de los puestos?
+- ¿Cuántos artículos incluyen la palabra `Pasta` en su nombre?
+- ¿Cuál es el salario mínimo y máximo?
+- ¿Cuál es la suma del salario de los últimos cinco puestos agregados?
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+<details><summary>Solución</summary>
+<p>
 
-![imagen](https://picsum.photos/200/300)
+- ¿Cuál es el promedio de salario de los puestos?
 
+   ```sql
+   SELECT avg(salario)
+   FROM puesto;
+   ```
+   ![imagen](imagenes/s2wr21.png)
+
+- ¿Cuántos artículos incluyen la palabra `Pasta` en su nombre?
+
+   ```sql
+   SELECT count(*)
+   FROM articulo
+   WHERE nombre LIKE '%pasta%';
+   ```
+   ![imagen](imagenes/s2wr22.png)
+   
+- ¿Cuál es el salario mínimo y máximo?
+
+   ```sql
+   SELECT min(salario), max(salario)
+   FROM puesto;
+   ```
+   ![imagen](imagenes/s2wr23.png)
+   
+- ¿Cuál es la suma del salario de los últimos cinco puestos agregados?
+
+   Primero obtenemos el ídentificador que nos permite saber eso.
+   
+   ```sql
+   SELECT max(id_puesto) - 5
+   FROM puesto;
+   ```
+   
+   ![imagen](imagenes/s2wr24.png)
+   
+   Usamos ese identificador ahora.
+
+   ```sql
+   SELECT sum(salario)
+   FROM puesto
+   WHERE id_puesto > 995;
+   ```
+   ![imagen](imagenes/s2wr25.png)
+
+</p>
+</details>
+
+<br/>
+
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#agrupamientos)      
+
+</div> 

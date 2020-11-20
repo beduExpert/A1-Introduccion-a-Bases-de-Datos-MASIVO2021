@@ -1,29 +1,79 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 1`
 	
-## Titulo del Ejemplo 
+## Reto 1: Búsqueda de patrones mediante LIKE
 
-### OBJETIVO 
+<div style="text-align: justify;">
 
-- Lo que esperamos que el alumno aprenda 
+### 1. Objetivos :dart:
 
-#### REQUISITOS 
+- Escribir consultas que permitan responder a algunas preguntas.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+### 2. Requisitos :clipboard:
 
-#### DESARROLLO
+1. MySQL Workbench instalado.
 
-Agrega las instrucciones generales del ejemplo o reto
+### 3. Desarrollo :rocket:
 
-<details>
+Usando la base de datos `tienda`, escribe consultas que permitan responder las siguientes preguntas.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+- ¿Qué artículos incluyen la palabra `Pasta` en su nombre?
+- ¿Qué artículos incluyen la palabra `Cannelloni` en su nombre?
+- ¿Qué nombres están separados por un guión (`-`) por ejemplo `Puree - Kiwi`?
+- ¿Qué puestos incluyen la palabra `Designer`?
+- ¿Qué puestos incluyen la palabra `Developer`?
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+<details><summary>Solución</summary>
+<p>
 
-![imagen](https://picsum.photos/200/300)
+- ¿Qué artículos incluyen la palabra `Pasta` en su nombre?
 
+   ```sql
+   SELECT *
+   FROM articulo
+   WHERE nombre LIKE '%PASTA%';
+   ```
+   ![imagen](imagenes/s2wr11.png)
+
+- ¿Qué artículos incluyen la palabra `Cannelloni` en su nombre?
+
+   ```sql
+   SELECT *
+   FROM articulo
+   WHERE nombre LIKE '%Cannelloni%';
+   ```
+   ![imagen](imagenes/s2wr12.png)
+   
+- ¿Qué nombres están separados por un guión (`-`) por ejemplo `Puree - Kiwi`?
+
+   ```sql
+   SELECT *
+   FROM articulo
+   WHERE nombre LIKE '% - %';
+   ```
+   ![imagen](imagenes/s2wr13.png) 
+    
+- ¿Qué puestos incluyen la palabra `Designer`?
+    
+   ```sql
+   SELECT *
+   FROM puesto 
+   WHERE nombre LIKE "%Designer%";
+   ```
+    
+- ¿Qué puestos incluyen la palabra `Developer`?
+    
+   ```sql
+   SELECT *
+   FROM puesto 
+   WHERE nombre LIKE "%Developer%";
+   ```
+
+</p>
+</details>
+
+<br/>
+
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#funciones-de-agrupamiento)   
+
+
+</div>

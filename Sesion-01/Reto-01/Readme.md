@@ -1,29 +1,62 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Reto 1`
 	
-## Titulo del Ejemplo 
+## Reto 1: Estructura de una tabla
 
-### OBJETIVO 
+<div style="text-align: justify;">
 
-- Lo que esperamos que el alumno aprenda 
+### 1. Objetivos :dart:
 
-#### REQUISITOS 
+- Consultar la estructura de algunas tablas.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+### 2. Requisitos :clipboard:
 
-#### DESARROLLO
+1. MySQL Workbench instalado.
 
-Agrega las instrucciones generales del ejemplo o reto
+### 3. Desarrollo :rocket:
 
-<details>
+Usando la base de datos `tienda`, muestra la descripción de las tablas `articulo`, `puesto` y `venta`. Por cada tipo de dato que encuentras llena la siguiente tabla, a mano. Usa la [Documentación de MySQL](https://dev.mysql.com/doc/refman/8.0/en/data-types.html) como referencia.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+| Tipo   | Descripción |
+|---|---|
+|   |   |
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+<details><summary>Solución</summary>
+<p>
 
-![imagen](https://picsum.photos/200/300)
+Veamos la descripción de las tablas `articulo`, `puesto` y `venta`. Recuerda que para visualizar todas las tablas del esquema puedes usar el comando:
 
+```sql
+SHOW TABLES;
+```
+![imagen](imagenes/s1wr11.png)
+
+```sql
+DESCRIBE articulo;
+```
+![imagen](imagenes/s1wr12.png)
+
+```sql
+DESCRIBE puesto;
+```
+![imagen](imagenes/s1wr13.png)
+
+```sql
+DESCRIBE venta;
+```
+![imagen](imagenes/s1wr14.png)
+
+| Tipo        | Descripción                   |
+|-------------|-------------------------------|
+| `ìnt`       | Datos numéricos enteros       |
+| `varchar`   | Cadenas de caracteres         |
+| `timestamp` | Fechas                        |
+| `double`    | Datos numéricos con decimales |
+
+</p>
+</details>
+   
+<br/>
+
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#estructura-de-una-consulta)
+
+</div>

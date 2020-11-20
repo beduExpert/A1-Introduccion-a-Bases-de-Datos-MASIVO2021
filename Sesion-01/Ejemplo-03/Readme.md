@@ -1,28 +1,94 @@
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Ejemplo 3`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+## Ejemplo 3: Estructura básica de una consulta
 
-## Titulo del Ejemplo
+<div style="text-align: justify;">
 
-### OBJETIVO
+### 1. Objetivos :dart:
 
-- Lo que esperamos que el alumno aprenda
+- Escribir consultas sencillas por medio de `SELECT`.
+- Filtrar los resultados de un `SELECT` mediante la restricción `WHERE`.
+- Ilustrar el uso de los operadores lógicos, relacionales e `IN`.
 
-#### REQUISITOS
+### 2. Requisitos :clipboard:
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. Conexión al servidor de bases de datos que se configuró en el Ejemplo 1.
+2. MySQL Workbench instalado.
 
-#### DESARROLLO
+### 3. Desarrollo :rocket:
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Como recordarás de los ejemplos anteriores, la tabla `ejemplo` incluía un campo `nombre`, vamos a seleccionar (o *proyectar*) los registros de ese campo. Para ello, usa la instrucción:
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+   ```sql
+   SELECT nombre
+   FROM empleado;
+   ```
+   
+   ![imagen](imagenes/s1we31.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+2. Para traer todos los campos, usamos un asterisco en vez de listar todos los campos con la siguiente *consulta*:
 
-![imagen](https://picsum.photos/200/300)
+   ```sql
+   SELECT *
+   FROM empleado;
+   ```
+   
+   Se mostrarán las siguientes bases:
+   
+   ![imagen](imagenes/s1we32.png)
 
+3. Ahora, filtremos todos los usuarios cuyo apellido paterno sea `Risom`. Para ello, usamos `WHERE` como sigue:
 
+   ```sql
+   SELECT *
+   FROM empleado
+   WHERE apellido_paterno = 'Risom';
+   ```
+ 
+   ![imagen](imagenes/s1we33.png)
+
+4. También podemos usar operadores relacionales, para filtar registros. Por ejemplo, traemos todas los empleados cuyo `id_puesto` es mayor a 100.
+
+   ```sql
+   SELECT *
+   FROM empleado
+   WHERE id_puesto > 100;
+   ```
+
+   ![imagen](imagenes/s1we34.png)
+
+5. Podemos combinar filtros, mediante operadores lógicos, por ejemplo, supongamos que queremos todos los rubros cuyo `id_puesto` esté entre 100 y 200, entonces usamos el operador lógico `AND`.
+
+   ```sql
+   SELECT *
+   FROM empleado
+   WHERE id_puesto >= 100
+     AND id_puesto <= 200;
+   ```
+
+   ![imagen](imagenes/s1we35.png)
+   
+6. También podemos usar el operador lógico `OR`. Por ejemplo, queremos todos los rubros cuyo `id_puesto` sea 100 o 200.
+
+   ```sql
+   SELECT *
+   FROM empleado
+   WHERE id_puesto = 100
+      OR id_puesto = 200;
+   ```
+
+   ![imagen](imagenes/s1we36.png)
+   
+7. Una forma de acortar el `OR` anterior es mediante `IN`. De esta forma, vemos si un campo se encuentra en un *listado de valores*. 
+
+   ```sql
+   SELECT *
+   FROM empleado
+   WHERE id_puesto IN (100,200);
+   ```
+
+   ![imagen](imagenes/s1we37.png)
+
+[`Anterior`](../Readme.md#estructura-de-una-consulta) | [`Siguiente`](../Reto-02/Readme.md)
+
+</div>   

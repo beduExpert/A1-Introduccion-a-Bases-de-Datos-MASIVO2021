@@ -1,29 +1,90 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Reto 2`
 	
-## Titulo del Ejemplo 
+## Reto 2: Filtros básicos
 
-### OBJETIVO 
+<div style="text-align: justify;">
 
-- Lo que esperamos que el alumno aprenda 
+### 1. Objetivos :dart:
 
-#### REQUISITOS 
+- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+### 2. Requisitos :clipboard:
 
-#### DESARROLLO
+1. MongoDB Compass instalado.
 
-Agrega las instrucciones generales del ejemplo o reto
+### 3. Desarrollo :rocket:
 
-<details>
+Usando la base de datos `sample_mflix`, agrega proyeccciones, filtros, ordenamientos y límites que permitan contestar las siguientes preguntas.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
+- ¿Qué comentarios ha hecho Greg Powell?
+- ¿Qué comentarios han hecho Greg Powell o Mercedes Tyler?
+- ¿Cuál es el máximo número de comentarios en una película?
+- ¿Cuál es título de las cinco películas más comentadas?
+
+<details><summary>Solución</summary>
+<p>
+
+- ¿Qué comentarios ha hecho Greg Powell?
+
+   ```json
+   {name: "Greg Powell"}
+   ```
+   
+   ![imagen](imagenes/s4r21.png)
+
+- ¿Qué comentarios han hecho Greg Powell o Mercedes Tyler?
+
+   ```json
+   {$or: [{name: "Greg Powell"}, {name: "Mercedes Tyler"}]}
+   ```
+   
+   ![imagen](imagenes/s4r22.png)
+   
+- ¿Cuál es el máximo número de comentarios en una película?
+
+   Para responder esta pregunta, necesitamos tres cosas.
+   
+   1. Proyectar el número de comentarios
+
+   ```json
+   {num_mflix_comments: 1}	
+   ```
+   
+   2. Ordenar el número de comentarios de forma descendente.
+   
+   ```json
+   {num_mflix_comments:-1}
+   ```
+   
+   3. Limitar los resultados a 1.
+   
+   ![imagen](imagenes/s4r23.png) 
+   
+- ¿Cuál es título de las cinco películas más comentadas?
+
+   Para responder esta pregunta, necesitamos tres cosas.
+   
+   1. Proyectar el título de las películas.
+
+   ```json
+   {title: 1}	
+   ```
+   
+   2. Ordenar el número de comentarios de forma descendente.
+   
+   ```json
+   {num_mflix_comments: -1}
+   ```
+   
+   3. Limitar los resultados a 5.
+   
+   ![imagen](imagenes/s4r24.png)   
+
+</p>
 </details> 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+<br/>
 
-![imagen](https://picsum.photos/200/300)
+[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
 
+</div>

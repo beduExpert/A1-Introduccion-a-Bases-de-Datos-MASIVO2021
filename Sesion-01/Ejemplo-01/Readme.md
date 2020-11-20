@@ -1,28 +1,46 @@
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Ejemplo 1`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+## Ejemplo 1: Conexión a bases de datos
 
-## Titulo del Ejemplo
+<div style="text-align: justify;">
 
-### OBJETIVO
+### 1. Objetivos :dart:
 
-- Lo que esperamos que el alumno aprenda
+- Realizar la conexión a una base de datos mediante un cliente.
 
-#### REQUISITOS
+### 2. Requisitos :clipboard:
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. MySQL Workbench instalado.
 
-#### DESARROLLO
+### 3. Desarrollo :rocket:
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Abre MySQL Wokbench. En esta primera pantalla se muestran las conexiones que tienes configuradas o se muestra en blanco en caso de que sea la primera vez que realizas una conexión.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+   ![imagen](imagenes/s1-w1.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+2. Junto al título `MySQL Connections` da clic en el botón de más. Se abrirá una nueva ventana solicitando los datos para realizar la conexión correspondiente. Introduce los datos necesarios para realizar la conexión. Pide al experto que te los proporcione.
 
-![imagen](https://picsum.photos/200/300)
+   - **Connection Name:** Un nombre de tu preferencia para recordar a qué servidor te estás conectando.
+   - **Hostname:** Dirección del servidor al cuál nos conectaremos.
+   - **Port:** Puerto a través del cual realizaremos la conexión.
+   - **Password:** Contraseña de acceso. Da clic en el botón `Store in Keychain ...` e introduce la contraseña.
+   
+   ![imagen](imagenes/s1-w2.png)
 
+3. Presiona el botón `Test Connection` y si obtienes un mensaje como el que se muestra en la siguiente imagen, entonces los datos de la conexión son correctos y presiona el botón `Ok`. En caso contrario revisa las credenciales.
 
+   ![imagen](imagenes/s1-w3.png)
+
+4. Se añadirá la conexión que acabas de configurar a la pantalla inicial.
+
+   ![imagen](imagenes/s1-w4.png)
+
+5. Da clic sobre la conexión que se agregó a la pantalla inicial, se mostrará una ventana como la de la imagen.
+
+   ![imagen](imagenes/s1-w5.png)
+
+**¡Felicidades! Haz realizado tu primera conexión a una base de datos**
+
+[`Anterior`](../Readme.md#bases-de-datos-relacionales) | [`Siguiente`](../Readme.md#estructura-de-una-tabla)
+
+</div>

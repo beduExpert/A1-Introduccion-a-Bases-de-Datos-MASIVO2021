@@ -1,29 +1,38 @@
- 
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Reto 1
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
-	
-## Titulo del Ejemplo 
+## Reto 1: Realizando operaciones con tablas
 
-### OBJETIVO 
+### 1. Objetivos :dart:
+- Realizar operaciones SQL para administrar tablas
+- Crear tablas acorde a los datos
 
-- Lo que esperamos que el alumno aprenda 
+### 2. Requisitos :clipboard:
+- Servidor __MySQL__ instalado en tu equipo
 
-#### REQUISITOS 
+### 3. Desarrollo :rocket:
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+---
 
-#### DESARROLLO
+<img src="../imagenes/tabla.gif" align="right" height="170" width="200"> 
 
-Agrega las instrucciones generales del ejemplo o reto
+:warning: <ins>**IMPORTANTE**</ins>
 
-<details>
+_En este reto debes trabajar con la instancia de __MySQL__ que instalaste y configuraste en el *Prework* de la sesión_.
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+_NO REALICES LOS EJEMPLOS NI RETOS EN EL SERVIDOR DE BEDU._ :pray: 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+_Si no sigues esta indicación... ¡Hay Tabla!_ :eyes:
 
-![imagen](https://picsum.photos/200/300)
+---
 
+1. Definir los campos y tipos de datos para la tabla `movies` haciendo uso de los archivos `movies.dat` y `README`.
+
+1. Crear la tabla `movies` (recuerda usar el mismo nombre del archivo sin la extensión para vincular nombres de tablas con archivos).
+
+1. Definir los campos y tipos de datos para la tabla `ratings` haciendo uso de los archivos `ratings.dat` y `README`.
+
+1. Crear la tabla ratings (recuerda usar el mismo nombre del archivo sin la extensión para vincular nombres de tablas con archivos)
+
+<br/>
+
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#importando-datos-a-una-tabla-en-formato-csv)   

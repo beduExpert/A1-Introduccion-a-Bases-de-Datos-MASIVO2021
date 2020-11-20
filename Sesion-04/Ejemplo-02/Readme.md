@@ -1,28 +1,41 @@
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+## Ejemplo 2: Conexión a MongoDB
 
-## Titulo del Ejemplo
+<div style="text-align: justify;">
 
-### OBJETIVO
+### 1. Objetivos :dart:
 
-- Lo que esperamos que el alumno aprenda
+- Realizar la conexión a MongoDB mediante el cliente MongoDB Compass.
 
-#### REQUISITOS
+### 2. Requisitos :clipboard:
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. MongoDB Compass instalado.
 
-#### DESARROLLO
+### 3. Desarrollo :rocket:
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Abre MongoDB Compass. En esta primera pantalla se muestran, del lado izquierdo, las conexiones que tienes configuradas o se muestra en blanco en caso de que sea la primera vez que realizas una conexión.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+   ![imagen](imagenes/s4e11.png)
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+2. Abajo del título `New Connection`, da clic en el texto que dice `Fill in connection fields individually`. Cambiará el formato de la pantalla. Introduce los datos necesarios para realizar la conexión. Pide al experto que te los proporcione.
 
-![imagen](https://picsum.photos/200/300)
+   - **Hostname:** Dirección del servidor al cuál nos conectaremos.
+   - **Port:** Puerto a través del cual realizaremos la conexión.
+   - **SRV Record:** Dejar apagado.
+   - **Authentication:** Username / Password.
+   - **Username:** Nombre de usuario.
+   - **Password:** Contraseña de acceso.
+   - **Authentication Database:** Base de datos con la que se definió el usuario.
+   
+   ![imagen](imagenes/s4e12.png)
 
+3. Presiona el botón `Connect` y y si obtienes una pantalla como la que se muestra en la siguiente imagen, la conexión se habrá realizado con éxito.
 
+   ![imagen](imagenes/s4e13.png)
+
+**¡Felicidades! Haz realizado tu primera conexión a una base de datos con MongoDB**
+
+[`Anterior`](../Readme.md#conexión-a-mongodb) | [`Siguiente`](../Readme.md#colecciones-documentos-y-proyecciones)
+
+</div>

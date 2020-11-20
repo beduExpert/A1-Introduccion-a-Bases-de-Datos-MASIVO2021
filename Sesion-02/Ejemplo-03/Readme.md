@@ -1,28 +1,56 @@
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 3`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+## Ejemplo 3: Agrupamientos
 
-## Titulo del Ejemplo
+<div style="text-align: justify;">
 
-### OBJETIVO
+### 1. Objetivos :dart:
 
-- Lo que esperamos que el alumno aprenda
+- Escribir consultas que hagan uso de agrupamientos mediante las funciones revisadas en el Ejemplo 2.
 
-#### REQUISITOS
+### 2. Requisitos :clipboard:
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. MySQL Workbench instalado.
 
-#### DESARROLLO
+### 3. Desarrollo :rocket:
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Abre MySQL Wokbench y conectate a la base de datos del curso.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+2. Ahora revisaremos el concepto de agrupamiento. Para hacer un agrupamiento se usa la cláusula `GROUP BY` que recolecta datos de múltiples registros y los agrupa en una o más columnas. Veamos algunos ejemplos.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+   *Usando `SUM`*
+   
+   Se añade un *alias* a la consulta para hacer más entendible el nombre de la columna. Para añadir un alias se debe usar la primitiva `AS`. Recuerda que los campos antes de las funciones de agregación son los que deben aparecer en la cláusula `GROUP BY`.
 
-![imagen](https://picsum.photos/200/300)
+   ```sql
+   SELECT nombre, sum(precio) AS total
+   FROM articulo
+   GROUP BY nombre;
+   ```
+   
+   ![imagen](imagenes/s2we31.png)
+   
+   *Usando `COUNT`*
 
+   ```sql
+   SELECT nombre, count(*) AS cantidad
+   FROM articulo
+   GROUP BY nombre
+   ORDER BY cantidad DESC;
+   ```
+   
+   ![imagen](imagenes/s2we32.png)
+   
+   *Usando `MIN` y `MAX`*
+   
+   ```sql
+   SELECT nombre, min(salario) AS menor, max(salario) AS mayor
+   FROM puesto
+   GROUP BY nombre;
+   ```
 
+   ![imagen](imagenes/s2we33.png)
+
+[`Anterior`](../Readme.md#agrupamientos) | [`Siguiente`](../Reto-03/Readme.md)         
+
+</div>   

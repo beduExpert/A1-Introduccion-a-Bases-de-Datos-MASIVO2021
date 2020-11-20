@@ -1,29 +1,56 @@
- 
-
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks] 
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 3`
 	
-## Titulo del Ejemplo 
+## Reto 3: Introducción a las agregaciones
 
-### OBJETIVO 
+<div style="text-align: justify;">
 
-- Lo que esperamos que el alumno aprenda 
+### 1. Objetivos :dart: 
 
-#### REQUISITOS 
+- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
 
-1. Lo necesario para desarrollar el ejemplo o el Reto 
+### 2. Requisitos :clipboard:
 
-#### DESARROLLO
+1. MongoDB Compass instalado.
 
-Agrega las instrucciones generales del ejemplo o reto
+### 3. Desarrollo :rocket:
 
-<details>
+Usando la colección `sample_airbnb.listingsAndReviews`, mediante el uso de agregaciones, encontrar el número de publicaciones que tienen conexión a Internet, sea desde Wifi o desde cable (Ethernet).
 
-	<summary>Solucion</summary>
-	<p> Agrega aqui la solucion</p>
-	<p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details> 
+<details><summary>Solución</summary>
+<p>
+	
+1. Primero filtramos los documentos con Internet desde Wifi o desde cable. Para ello usamos `$match` que permite realizar filtros dentro de agregaciones.
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una)
+   ```json
+   {
+      amenities: {$in: ["Wifi", "Ethernet"]}
+   }
+   ```
 
-![imagen](https://picsum.photos/200/300)
+   ![imagen](imagenes/s5r31.png)
+   
+2. Ahora contamos el número de registros resultantes con `$group`. Los agrupamientos al igual que en __SQL__ necesitan un campo por el cual agrupar y una función de agrupamiento.
 
+   - Dado que contaremos los registros no necesitamos campo, así que ponemos `_id: null`.
+   
+   - Para agrupar usaremos la función `$sum` con el parámetro `1`. Es decir, por cada documento sumará un 1, trayendo al final el total de documentos.
+   
+   ```json
+   {
+      _id: null,
+      total: {
+         $sum: 1
+      }
+   }
+   ```
+   
+   ![imagen](imagenes/s5r32.png)
+
+</p>
+</details>
+
+<br/>
+
+[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+
+</div>

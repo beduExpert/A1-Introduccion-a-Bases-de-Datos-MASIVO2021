@@ -1,28 +1,68 @@
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Ejemplo 2`
 
-agrega el programa que se desarrollara con backticks> [agrega la sesion con backticks]
+## Ejemplo 2: Definición de vistas
 
-## Titulo del Ejemplo
+<div style="text-align: justify;">
 
-### OBJETIVO
+### 1. Objetivos :dart:
 
-- Lo que esperamos que el alumno aprenda
+- Crear vistas para preservar el contenido de una consulta.
+- Consultas vistas como cualquier otra tabla.
 
-#### REQUISITOS
+### 2. Requisitos :clipboard:
 
-1. Lo necesario para desarrollar el ejemplo o el Reto
+1. MySQL Workbench instalado.
 
-#### DESARROLLO
+### 3. Desarrollo :rocket:
 
-Agrega las instrucciones generales del ejemplo o reto
+1. Abre MySQL Wokbench y conectate a la base de datos del curso.
 
-<details>
-	<summary>Solucion</summary>
-        <p> Agrega aqui la solucion</p>
-        <p>Recuerda! escribe cada paso para desarrollar la solución del ejemplo o reto </p>
-</details>
+2. Una vista permite preservar los resultados obtenidos mediante una consulta. Esto es útil pues no se tienen que estar reescribiendo relaciones, agrupando resultado, ordenando los registros, etc. La vista se almacena en memoria como si fuera una tabla cualquiera. 
 
-Agrega una imagen dentro del ejemplo o reto para dar una mejor experiencia al alumno (Es forzoso que agregages al menos una) 
+   Por ejemplo, la tabla que almacena las ventas, puede relacionarse con los empleados y los artículo. Podemos crear una vista que almacene esta relación como si fuera un *ticket*.
+   
+   Lo primero será, definir la consulta.
 
-![imagen](https://picsum.photos/200/300)
+   ```sql
+   SELECT v.clave, v.fecha, a.nombre producto, a.precio, concat(e.nombre, ' ', e.apellido_paterno) empleado 
+   FROM venta v
+   JOIN empleado e
+     ON v.id_empleado = e.id_empleado
+   JOIN articulo a
+     ON v.id_articulo = a.id_articulo;
+   ```
+   
+   ![imagen](imagenes/s3we31.png)
+   
+   Ahora crearemos la vista con la instrucción `CREATE VIEW`. Le daremos el nombre `tickets`.
+    
+   ```sql
+   CREATE VIEW tickets AS
+   (SELECT v.clave, v.fecha, a.nombre producto, a.precio, concat(e.nombre, ' ', e.apellido_paterno) empleado 
+   FROM venta v
+   JOIN empleado e
+     ON v.id_empleado = e.id_empleado
+   JOIN articulo a
+     ON v.id_articulo = a.id_articulo);
+   ```
+   
+3. Ahora que se ha creado la vista, pueden realizarse consultas sobre la misma al igual que con cualquier tabla.
 
+   ```sql
+   SELECT *
+   FROM tickets;
+   ```
 
+   ![imagen](imagenes/s3we22.png)
+ 
+   ```sql
+   SELECT clave, round(sum(precio),2) total
+   FROM tickets
+   GROUP BY clave;	
+   ```
+   
+   ![imagen](imagenes/s3we23.png)
+
+[`Anterior`](../Readme.md#definición-de-vistas) | [`Siguiente`](../Reto-02/Readme.md)
+
+</div>   
