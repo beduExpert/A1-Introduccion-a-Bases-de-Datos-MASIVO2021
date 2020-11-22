@@ -27,7 +27,9 @@
    SHOW DATABASES;
    ```
    
-   Se mostrarán las siguientes bases:
+   Para ejecutarlo, usa `Ctrl+Enter` o da clic sobre el ícono del rayito. :zap:, de esta forma ejecutaremos todos los comentos. 
+
+   En este caso, se mostrarán las siguientes bases:
    
    ![imagen](imagenes/s1we22.png)
 

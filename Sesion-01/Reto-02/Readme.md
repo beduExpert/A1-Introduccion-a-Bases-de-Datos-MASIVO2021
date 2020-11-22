@@ -14,12 +14,12 @@
 
 ### 3. Desarrollo :rocket:
 
-Usando la base de datos `tienda`, escribe consultas que permitan responder las siguientes preguntas.
+Usando la base de datos `cursos`, escribe consultas que permitan responder las siguientes preguntas.
 
 - ¿Cuál es el nombre de los empleados con el puesto 4?
 - ¿Qué puestos tienen un salario mayor a $10,000?
 - ¿Qué articulos tienen un precio mayor a $1,000 y un iva mayor a 100?
-- ¿Qué ventas incluyen los artículo 135 o 963 y fueron hechas por los empleados 835 o 369?
+- ¿Qué ventas incluyen los artículos 135 o 963 y fueron hechas por los empleados 835 o 369?
 
 <details><summary>Solución</summary>
 <p>
@@ -52,7 +52,7 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
    ```
    ![imagen](imagenes/s1wr23.png) 
    
-- ¿Qué ventas incluyen los artículo 135 o 963 y fueron hechas por los empleados 835 o 369?
+- ¿Qué ventas incluyen los artículos 135 o 963 y fueron hechas por los empleados 835 o 369?
 
    ```sql
    SELECT *

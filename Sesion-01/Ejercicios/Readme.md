@@ -10,11 +10,11 @@
 
 ### 2. Requisitos :clipboard:
 
-1. MySQL Workbench instalado.
+1. MySQL Workbench instalado y conectado al servidor del curso.
 
 ### 3. Desarrollo :rocket:
 
-**En este pequeño proyecto aplicarás los conceptos adquiridos durante la sesión:**
+**En esta serie de ejercicios aplicarás los conceptos adquiridos durante la sesión:**
 
 - Descripción de tablas  
 - Consulta de los campos de una tabla  
@@ -25,6 +25,8 @@
 - Cláusula LIMIT  
 
 Todas las consultas que realices deberás mantenerlas dentro del editor de textos de MySQL Workbench. Al finalizar, guarda este archivo, llendo al menú `File` > `Save script`. Recuerda que para hacer consultas a una tabla debes conocer primero su estructura.
+
+**Deberás entregar el archivo `.sql` correspondiente**
 
 1. Dentro del mismo servidor de bases de datos, conéctate al esquema `classicmodels`.
 
@@ -62,18 +64,30 @@ Todas las consultas que realices deberás mantenerlas dentro del editor de texto
 
 18. Dentro de la tabla `orders`, obtén el número de orden, número de cliente, estado y fecha de envío de todas las órdenes con el número `10165`, `10287` o `10310`.
 
-19. Dentro de la tabla `customers`, obtén el apellido y nombre de cada cliente y ordena los resultados por apellido de forma ascendente.
+19. Dentro de la tabla `customers`, obtén el apellido de contacto y nombre de cada cliente y ordena los resultados por apellido de forma ascendente.
 
-20. Dentro de la tabla `customers`, obtén el apellido y nombre de cada cliente y ordena los resultados por apellido de forma descendente.
+20. Dentro de la tabla `customers`, obtén el apellido de contacto y nombre de cada cliente y ordena los resultados por apellido de forma descendente.
 
 21. Dentro de la tabla `customers`, obtén el apellido y nombre de cada cliente y ordena los resultados por apellido de forma descendente y luego por nombre de forma ascendente.
 
 22. Dentro de la tabla `customers`, obtén el número de cliente, nombre de cliente y el límite de crédito de los cinco clientes con el límite de crédito más alto (top 5).
 
-23. Dentro de la tabla `customers`, obtén el número de cliente, nombre de cliente y el límite de crédito de los cinco clientes con el límite de crédito más bajo.
+23. Dentro de la tabla `customers`, obtén el número de cliente, nombre de cliente y el límite de crédito de los cinco clientes con el límite de crédito más bajo diferente de 0.
 
 **¡¡¡MUCHA SUERTE!!!**
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+<details><summary>Solución</summary>
+<br/>
+
+[**Revisa el script con las soluciones**](solucion.sql)
+
+<p>
+
+</p>
+</details> 
+
+<br/>
+
+[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)
 
 </div>

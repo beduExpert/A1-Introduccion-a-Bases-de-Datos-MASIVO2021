@@ -19,11 +19,11 @@ Usando la base de datos `tienda`, escribe una consulta que permita obtener el to
 <details><summary>Solución</summary>
 <p>
 
-Para contestar a esta pregunta, basta con ordenar las calificaciones del alumno en orden descendente y limitar el número de registros a 5.
+Para contestar a esta pregunta, basta con ordenar los puestos por salario en orden descendente y limitar el número de registros a 5.
 
    ```sql
    SELECT *
-   FROM tienda
+   FROM puesto
    ORDER BY salario DESC
    LIMIT 5;
    ```

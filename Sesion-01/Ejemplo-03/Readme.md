@@ -17,7 +17,7 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Como recordarás de los ejemplos anteriores, la tabla `ejemplo` incluía un campo `nombre`, vamos a seleccionar (o *proyectar*) los registros de ese campo. Para ello, usa la instrucción:
+1. Como recordarás de los ejemplos anteriores, la tabla `empleado` incluía un campo `nombre`, vamos a seleccionar (o *proyectar*) los registros de ese campo. Para ello, usa la instrucción:
 
    ```sql
    SELECT nombre
@@ -33,7 +33,7 @@
    FROM empleado;
    ```
    
-   Se mostrarán las siguientes bases:
+   Se mostrarán los siguientes registros:
    
    ![imagen](imagenes/s1we32.png)
 
@@ -47,7 +47,7 @@
  
    ![imagen](imagenes/s1we33.png)
 
-4. También podemos usar operadores relacionales, para filtar registros. Por ejemplo, traemos todas los empleados cuyo `id_puesto` es mayor a 100.
+4. También podemos usar operadores relacionales, para filtar registros. Por ejemplo, traemos todos los empleados cuyo `id_puesto` es mayor a 100.
 
    ```sql
    SELECT *
@@ -57,7 +57,7 @@
 
    ![imagen](imagenes/s1we34.png)
 
-5. Podemos combinar filtros, mediante operadores lógicos, por ejemplo, supongamos que queremos todos los rubros cuyo `id_puesto` esté entre 100 y 200, entonces usamos el operador lógico `AND`.
+5. Podemos combinar filtros, mediante operadores lógicos, por ejemplo, supongamos que queremos todos los registros cuyo `id_puesto` esté entre 100 y 200, entonces usamos el operador lógico `AND`.
 
    ```sql
    SELECT *

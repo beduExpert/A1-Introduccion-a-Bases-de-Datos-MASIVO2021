@@ -55,7 +55,7 @@ En su forma más básica una consulta se compone de:
 
 1. Una cláusula `SELECT` que indica los campos de la tabla que se desean obtener.
 1. Una cláusula `FROM` que indica de dónde obtener los datos.
-1. Una cláusula `WHERE` que representa los filtros que podemos hacerle a los datos.
+1. Una cláusula `WHERE` que representa los filtros que podemos aplicarle a los datos.
 
 > *Ejemplificar la estructura de una consulta sencilla y explicar estras tres partes con detalle. Se sugiere dibujar un diagrama el el pizarrón.*
 
@@ -79,7 +79,7 @@ Una vez obtenidos los datos requeridos mediante una consulta, es posible ordenar
 
 ---
 
-### 3. Ejercicios de práctica :hammer:
+### 3. Ejercicios para practicar :hammer:
 
 Aplica lo todo lo que aprendiste durante la sesión en estos ejercicios. 
 
