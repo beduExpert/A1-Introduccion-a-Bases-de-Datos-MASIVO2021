@@ -65,7 +65,7 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
    ```sql
    SELECT sum(salario)
    FROM puesto
-   WHERE id_puesto > 995;
+   WHERE id_puesto >= 995;
    ```
    ![imagen](imagenes/s2wr25.png)
 

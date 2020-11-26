@@ -16,13 +16,13 @@
 
 Todas las consultas que realices deberás mantenerlas dentro del editor de textos de MySQL Workbench. Al finalizar, guarda este archivo, llendo al menú `File` > `Save script`. 
 
-1. Dentro de la tabla `employees`, obten el número de empleado, apellido y nombre de todos los empleados cuyo nombre empiece con `a`.
+1. Dentro de la tabla `employees`, obten el número de empleado, apellido y nombre de todos los empleados cuyo nombre empiece con `A`.
 
-2. Dentro de la tabla `employees`, obten el número de empleado, apellido y nombre de todos los empleados cuyo nombre termina con `on`.
+2. Dentro de la tabla `employees`, obten el número de empleado, apellido y nombre de todos los empleados cuyo apellido termina con `on`.
 
 3. Dentro de la tabla `employees`, obten el número de empleado, apellido y nombre de todos los empleados cuyo nombre incluye la cadena `on`.
 
-4. Dentro de la tabla `employees`, obten el número de empleado, apellido y nombre de todos los empleados cuyos nombres tienen tres letras e inician con `T` y finalizan con `m`.
+4. Dentro de la tabla `employees`, obten el número de empleado, apellido y nombre de todos los empleados cuyos nombres tienen seis letras e inician con `G`.
 
 5. Dentro de la tabla `employees`, obten el número de empleado, apellido y nombre de todos los empleados cuyo nombre *no* inicia con `B`.
 
@@ -46,6 +46,18 @@ Todas las consultas que realices deberás mantenerlas dentro del editor de texto
 
 **¡¡¡MUCHA SUERTE!!!**
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#3-proyecto-hammer)            
+<details><summary>Solución</summary>
+<br/>
+
+[**Revisa el script con las soluciones**](solucion.sql)
+
+<p>
+
+</p>
+</details> 
+
+<br/>
+
+[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)            
 
 </div>

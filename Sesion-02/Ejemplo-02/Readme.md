@@ -6,7 +6,7 @@
 
 ### 1. Objetivos :dart:
 
-- Realizar consultas que modifiquen el valor de una columna mediante lo que se conoce como *función de agrupamiento*.
+- Realizar consultas que agrupen el valor de una columna mediante lo que se conoce como *función de agrupamiento*.
 
 ### 2. Requisitos :clipboard:
 

@@ -6,7 +6,7 @@
 
 ### 1. Objetivos :dart:
 
-- Realizar consultas que hagan uso de la restricción `LIKE` que hace uso de la técnica de reconocimiento de patrones.
+- Realizar consultas que hagan uso de la restricción `LIKE` mediante de la técnica de reconocimiento de patrones.
 
 ### 2. Requisitos :clipboard:
 
@@ -15,6 +15,8 @@
 ### 3. Desarrollo :rocket:
 
 1. Abre MySQL Wokbench y conectate a la base de datos del curso.
+
+> :point_up: **Recuerda:** `USE tienda`
 
 2. La primitiva `LIKE` permite encontrar patrones en una cadena. Para detectar patrones se usan los símbolos `%` y `_`. El símbolo `%` es sustituido por cualquier cadena. Por ejemplo, para obtener todos los empleados cuyo nombre empieza con `M` se usa la siguiente consulta.
 
@@ -46,7 +48,7 @@
 
    ![imagen](imagenes/s2we13.png)
 
-5. Otra forma es mediante el símbolo `_` que se sustituye por cualquier caracter. Por ejemplo, podemos traer los empleados que tienen la estructura `M_elosa`.
+5. Otra forma es mediante el símbolo `_` que se sustituye por cualquier caracter. Por ejemplo, podemos traer los empleados que tienen la estructura `M_losa`.
 
    ```sql
    SELECT *
