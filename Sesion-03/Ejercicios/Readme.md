@@ -14,21 +14,23 @@
 
 ### 3. Desarrollo :rocket:
 
-Todas las consultas que realices deberás mantenerlas dentro del editor de textos de MySQL Workbench. Al finalizar, guarda este archivo, llendo al menú `File` > `Save script`. 
+Todos los ejercicios debes hacerlos usando la base `classicmodels`.
+
+Todas las consultas que realices deberás mantenerlas dentro del editor de textos de MySQL Workbench. Al finalizar, guarda este archivo, llendo al menú `File` > `Save script`.  **Recuerda añadir a todos los nombres te dus vistas el sufijo con tu identificador**.
 
 *Para estas consultas usa RIGHT JOIN*
 
-1. Obten el código de producto, nombre de producto y descripción de todos los productos.
+1. Obtén la cantidad de productos de cada orden.
 
 2. Obten el número de orden, estado y costo total de cada orden.
 
-3. Obten el número de orden, fecha de orden, línea de orden, nombre del producto, cantidad ordenada y precio de cada pieza que muestre los detalles de cada orden.
+3. Obten el número de orden, fecha de orden, línea de orden, nombre del producto, cantidad ordenada y precio de cada pieza.
 
 4. Obtén el número de orden, nombre del producto, el precio sugerido de fábrica (msrp) y precio de cada pieza.
 
 *Para estas consultas usa LEFT JOIN*
 
-5. Obtén el número de cliente, nombre de cliente, número de orden y estado de cada cliente.
+5. Obtén el número de cliente, nombre de cliente, número de orden y estado de cada orden hecha por cada cliente. ¿De qué nos sirve hacer `LEFT JOIN` en lugar de `JOIN`?
 
 6. Obtén los clientes que no tienen una orden asociada.
 
@@ -36,12 +38,23 @@ Todas las consultas que realices deberás mantenerlas dentro del editor de texto
 
 *Para estas consultas usa RIGHT JOIN*
 
-8. Repite los ejercicios 5 a 7 usando *RIGHT JOIN*.
+8. Repite los ejercicios 5 a 7 usando *RIGHT JOIN*. ¿Representan lo mismo? Explica las diferencias en un comentario. Para poner comentarios usa `--`.
 
 9. Escoge 3 consultas de los ejercicios anteriores, crea una vista y escribe una consulta para cada una.
 
 **¡¡¡MUCHA SUERTE!!!**
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+<details><summary>Solución</summary>
+<br/>
+
+[**Revisa el script con las soluciones**](solucion.sql)
+
+<p>
+
+</p>
+</details> 
+
+
+[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)
 
 </div>

@@ -1,12 +1,13 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Ejemplo 1`
 
-## Ejemplo 1: Subconsultas
+## Ejemplo 1: Clasificación de Joins
 
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart:
 
-- Escribir consultas que hagan uso de otras subconsultas, ya sea en la cláusula `SELECT`, en la cláusula `FROM` o en la cláusula `WHERE`.
+- Analizar la relación que existe entre dos o más tablas.
+- Comprender las distintas formas de relacionar tablas mediante el uso de las cláusulas `JOIN`, `LEFT JOIN` y `RIGHT JOIN`.
 
 ### 2. Requisitos :clipboard:
 
@@ -14,91 +15,59 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Abre MySQL Wokbench y conectate a la base de datos del curso.
+1. Abre MySQL Wokbench y conectate a la base de datos `tienda`.
 
-2. Una subconsulta es una consulta dentro de otra. Puede crear sunconsultas en SQL y pueden aparecer en la cláusula `WHERE`, `FROM` o `SELECT`. Veamos algunos ejemplos.
-    
-   *Usando `WHERE` + `>`*
-    
-   ¿Cuál es la suma del salario de los últimos cinco puestos agregados?
-
-   Primero obtenemos el ídentificador que nos permite saber eso.
-   
-   ```sql
-   SELECT max(id_puesto) - 5
-   FROM puesto;
-   ```  
-  
-Usamos ese identificador ahora.
-
-    
-   ```sql
-   SELECT sum(salario)
-   FROM puesto
-   WHERE id_puesto > 995;
-   ```  
-  
-Usando una subconsulta lo podríamos hacer de la siguiente manera:
-    
-   ```sql
-   SELECT sum(salario)
-   FROM puesto
-   WHERE id_puesto > (SELECT max(id_puesto) - 5 FROM puesto);
-   ```  
-  
-   *Usando `WHERE` + `IN`*
-   
-   Queremos los empleados cuyo puesto es `Junior Executive`. Para realizar la subconsulta, descompongamos el problema en partes. Primero necesitamos saber el identificador de los puestos con ese nombre.
+2. Para poder relacionar tablas, necesitamos conocer las *llaves primarias* y *foráneas* presentes en una tabla. Una forma de encontrar esto es usando la primitiva `SHOW KEYS`. Por ejemplo, a continuación se muestran las llaves para la tabla `venta` del esquema `tienda`.
 
    ```sql
-   SELECT id_puesto
-   FROM puesto
-   WHERE nombre = 'Junior Executive';
+   SHOW KEYS FROM venta;
    ```
    
-   ![imagen](imagenes/s2we41.png)
+   ![imagen](imagenes/s3we11.png)
    
-   Ahora, con los identificadores que obtuvimos, podemos hacer una búsqueda de los empleado que tienen dichos identificadores. Para ello, usamos la consulta anterior dentro de la cláusula `WHERE` y filtramos aquellos empleados cuyo `id_puesto` esté en los resultados de la misma.
+   La llave primaria se resalta pues en el campo `Key_name` aparece el valor `PRIMARY`, mientras que el resto de las llaves se consideran llaves foráneas.
+   
+3. Los joins son usados para obtener información de varias tablas. Para obtener esta información, existen tres variantes de join: por la izquierda, por la derecha y el join simple.
+
+   *`JOIN`/`INNER JOIN`*
+   
+   Es el tipo de join más común y regresa todos los registros de múltiples tablas donde se cumplan la condición del join (*join codition*). Por ejemplo, podemos relacionar la tabla `empleado` con `puesto`.
    
    ```sql
    SELECT *
-   FROM empleado
-   WHERE id_puesto IN 
-      (SELECT id_puesto
-      FROM puesto
-      WHERE nombre = 'Junior Executive');
+   FROM empleado AS e
+   JOIN puesto AS p
+     ON e.id_puesto = p.id_puesto;
    ```
-   
-   ![imagen](imagenes/s2we42.png)
-   
-   *Usando `FROM`*
-   
-   Ahora queremos saber cuál es la menor y mayor cantidad de ventas de un artículo. Nuevamente, volvemos a descomponer el problema. Primero, obtengamos la cantidad de piezas por venta de un artículo. 
 
+   ![imagen](imagenes/s3we12.png)
+   
+   *`LEFT JOIN` / `LEFT OUTER JOIN`*  
+   
+   Este tipo join, regresa todos los registros de la tabla izquierda que se está relacionando y únicamente aquellos que cumplen con la condición de relación de la tabla derecha. Si algún registro no cumple con la condición, llenará sus campos con `NULL`.
+ 
    ```sql
-   SELECT clave, id_articulo, count(*) AS cantidad
-   FROM venta
-   GROUP BY clave, id_articulo
-   ORDER BY clave;
+   SELECT *
+   FROM puesto AS p
+   LEFT JOIN empleado e
+   ON p.id_puesto = e.id_puesto;
    ```
    
-   ![imagen](imagenes/s2we43.png)
+   ![imagen](imagenes/s3we13.png)
    
-   Ahora, sobre la tabla resultante hacemos un nuevo agrupamiento para obtener la cantidad mínima y máxima de cada artículo, sin importar la venta.
+   *`RIGHT JOIN` / `RIGHT OUTER JOIN`*
+   
+   Este tipo de join, es equivalente al anterior. Regresa todos los registros de la tabla derecha que se está relacionando y únicamente aquellos que cumplen con la condición de relación de la tabla izquierda. Si algún registro no cumple con la condición, llenará sus campos con `NULL`.
    
    ```sql
-   SELECT id_articulo, min(cantidad), max(cantidad)
-   FROM 
-      (SELECT clave, id_articulo, count(*) AS cantidad
-      FROM venta
-      GROUP BY clave, id_articulo
-      ORDER BY clave) AS subconsulta
-   GROUP BY id_articulo;
+   SELECT *
+   FROM empleado AS e
+   RIGHT JOIN puesto AS p
+   ON e.id_puesto = p.id_puesto;
    ```
    
-   ![imagen](imagenes/s2we44.png)
+   ![imagen](imagenes/s3we14.png)
 
-
-[`Anterior`](../Readme.md#subconsultas) | [`Siguiente`](../Reto-01/Readme.md)            
+[`Anterior`](../Readme.md#clasificación-de-joins) | [`Siguiente`](../Reto-01/Readme.md)
 
 </div>

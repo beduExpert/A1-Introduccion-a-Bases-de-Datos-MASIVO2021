@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Reto 1`
 	
-## Reto 1: Subconsultas
+## Reto 1: Agrupamientos y subconsultas
 
 <div style="text-align: justify;">
 
@@ -16,53 +16,54 @@
 
 Usando la base de datos `tienda`, escribe consultas que permitan responder las siguientes preguntas.
 
-- ¿Cuál es el nombre de los empleados cuyo sueldo es mayor a \$100,000?
-- ¿Cuál es la cantidad mínima y máxima de ventas de cada empleado?
-- ¿Cuáles claves de venta incluyen artículos cuyos precios son mayores a \$5,000?
+- ¿Cuál es el nombre de los empleados que realizaron cada venta?
+- ¿Cuál es el nombre de los artículos que se han vendido?
+- ¿Cuál es el total de cada venta?
 
 <details><summary>Solución</summary>
 <p>
 
-- ¿Cuál es el nombre de los empleados cuyo sueldo es mayor a $100,000?
+- ¿Cuál es el nombre de los empleados que realizaron cada venta?
 
    ```sql
-   SELECT nombre, apellido_paterno
-   FROM empleado
-   WHERE id_puesto IN
-	(SELECT id_puesto
-         FROM puesto
-         WHERE salario > 100000);
+   SELECT clave, nombre, apellido_paterno
+   FROM venta AS v
+   JOIN empleado AS e
+     ON v.id_empleado = e.id_empleado
+   ORDER BY clave;
    ```
    
-   ![imagen](imagenes/s2wr41.png)
+   ![imagen](imagenes/s3wr11.png)
 
-- ¿Cuál es la cantidad mínima y máxima de ventas de cada empleado?
-
-   ```sql
-   SELECT id_empleado, min(total_ventas), max(total_ventas)
-   FROM
-	(SELECT clave, id_empleado, count(*) total_ventas
-         FROM venta
-         GROUP BY clave, id_empleado) AS sq
-   GROUP BY id_empleado;
-   ```
-   
-   ![imagen](imagenes/s2wr42.png)
-   
-- ¿Cuáles claves de venta incluyen artículos cuyos precios son mayores a $5,000?
+- ¿Cuál es el nombre de los artículos que se han vendido?
 
    ```sql
-   SELECT clave, id_articulo FROM venta
-    WHERE id_articulo IN (
-    SELECT id_articulo FROM
-    articulo WHERE precio > 5000);
+   SELECT clave, nombre
+   FROM venta AS v
+   JOIN articulo AS a
+     ON v.id_articulo = a.id_articulo
+   ORDER BY clave;
    ```
+   
+   ![imagen](imagenes/s3wr12.png)
+   
+- ¿Cuál es el total de cada venta?
+
+   ```sql
+   SELECT clave, round(sum(precio),2) AS total
+   FROM venta AS v
+   JOIN articulo AS a
+     ON v.id_articulo = a.id_articulo
+   GROUP BY clave
+   ORDER BY clave;
+   ```
+   ![imagen](imagenes/s3wr13.png) 
 
 </p>
 </details> 
 
 <br/>
 
-[`Anterior`](../Ejemplo-04/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)            
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#definición-de-vistas)
 
 </div>
