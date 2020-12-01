@@ -23,7 +23,7 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 <details><summary>Solución</summary>
 <p>
 
-- ¿Cuál es el nombre de los empleados cuyo sueldo es menor a $10,000?
+- ¿Cuál es el nombre de los empleados cuyo sueldo es mayor a $10,000?
 
    ```sql
    SELECT nombre, apellido_paterno
