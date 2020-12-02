@@ -1,85 +1,50 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Ejemplo 1
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 1
 
-## Ejemplo 1: Configuración de __MongoDB__ en la nube
+## Ejemplo 1: Operaciones con bases de datos
 
-### 1. Objetivos :dart:
-- Que el alumno configure MongoDB en la nube
+<div style="text-align: justify;">
+
+### 1. Objetivos :dart: 
+- Conectarse a un servidor __MySQL__	localmente.
+- Conocer las operaciones sobre bases de datos.
 
 ### 2. Requisitos :clipboard:
-- Ninguno
+- Servidor de __MySQL__ instalado y ejecutándose.
 
 ### 3. Desarrollo :rocket:
-1. Para poder hacer uso de MongoDB en la nube se hará uso del servicio __Atlas__ proveeido por el propio equipo de MongoDB, abrir la siguiente url, llenar los campos del formulario y dar click en el botón de __Get srtarted free__
 
-   URL: https://www.mongodb.com/cloud/atlas?jmp=docs
+1. Conectate a tu base de datos desde __MySQL Workbench__ con las credenciales correspondientes a la configuración de tu servidor.
 
-   ![Registro en MongoDB atlas](imagenes/registro-mongodb-atlas.png)
+1. Para crear una base de datos se usa la instrucción `CREATE DATABASE Nombre`, donde `Nombre` suele ser el nombre del proyecto, pero para el curso usa tú nombre y un apellido o un seudónimo en redes sociales que prefieras.
 
-1. Elegir el tipo de __Cluster__, en donde se seleccionará __Starter Clusters__ que es el que es libre de costo, dar click en el botón __Create a Cluster__.
+   ![imagen](imagenes/s7e11.png)
 
-   ![Seleccionando cluster](imagenes/seleccionando-cluster.png)
-   Observar que con MongoDB Atlas se crean __Clusters__ y no __Servidores__.
+   El resultado indica que el comando se ejecutó de forma correcta, la cantidad de líneas o renglones afectados y el tiempo de ejecución.
 
-1. Después se tienen que seleccionar las opciones para el __Starter Cluster__ y las opciones por omisión son las correctas (AWM Amazon, N. Virginia, M0 Sandbox, MongoDB 4.0, Cluster 0)
-
-   ![Configurando el Started Cluster](imagenes/configurando-cluster.png)
-   Y presionar en el botón __Create Cluster__, lo que va a crear un __Cluster__ de trabajo, acción que puede demorar unos 5 mins.
-
-   ![Cluster creándose](imagenes/creando-cluster-01.png)
-
-   Cuando el __Cluster__ ya está creado se observa la página como la siguiente:
-
-   ![Cluster creado](imagenes/creando-cluster-02.png)
-
-1. Lo que sigue es iniciar una conexión al cluster de MongoDB en la nube, esto se realiza dando click en el botón __CONNECT__
-
-  ![Conectando al servidor MongoDB](imagenes/conectando-a-mongodb.png)
-
-  MongoDB Atlas hace una validación y solicita definir qué dirección IP se va a conectar al servidor y qué usuario.
-
-  Así que da click en el botón __Add Your Current IP Address__
-
-  ![Agregando ip](imagenes/agregando-ip.png)
-
-  Se sugiere etiquetar la dirección IP, para llevar un registro de a quién corresponde cada IP y más adelante poder eliminar las direcciones que ya no sean necesarias.
-
-  Después usar los siguientes datos para crear el usuario de acceso:
-
-  - Usuario: introabd
-  - Password: introabd1234
-
-  ![Creando usuario](imagenes/creando-usuario.png)
-
-  Y presionar en el botón __Create MongoDB User__
-
-  Y posteriormente se da click en el botón __Choose a connection method__ donde se seleccionará __Compass__ para continuar en el siguiente ejemplo.
-
-  ![Seleccionando Compass como método de conexión](imagenes/seleccionando-compass.png)
-
-1. Una vez creada la configuración en __MongoDB Atlas__ se realiza la conexión por medio de __MongoDB Compass__, así que estándo en la página de MongoDB Atlas se da click en la opción __Connect with MongoDB Compass__
-
-   ![Eligiendo conexión con MongoDB Compass](imagenes/eligiendo-compass.png)
-
-   Después de dar click, se elige la opción donde ya tenemos __Compass__ instalado dando click en __I have Compass__.
-
-   ![Eligiendo Compass instalado](imagenes/compass-instalado.png)
+   **Sugerencia.**  Cuando este comando sea usado con *scripts* para automatizar tareas, se sugiere usar la siguiente variante:
    
-   En el punto 1 la opción actual es la correcta y en el punto 2 se da click en el botón __Copy__
+   ```sql
+   CREATE DATABASE IF NOT EXISTS Nombre;
+   ```
 
-1. Si __MongoDB Compass__ está abierto es necesario cerrarlo y abrirlo nuevamente, al momento de iniciar, __Compass__ detecta la información copiada al portapapeles y pregunta si se desea usar la información para realizar la conexión:
+   para evitar que se genere un error en caso de que la base de datos ya exista y se intente crear de nuevo.
 
-   ![Iniciando Compass](imagenes/iniciando-compass.png)
+1. Para borrar una base de datos se usa el comando  `DROP DATABASE Nombre`
+   
+   ![imagen](imagenes/s7e12.png)
 
-   Dar click en el botón __Yes__ y __Compass__ en automático llena todos los campos de conexión, menos la clave, así que se teclea la clave y se da click en el botón __CONNECT__.
+   **Sugerencia.**  Cuando este comando sea usado con scripts para automatizar tareas, se sugiere usar la siguiente variante:
 
-   ![Datos de conexión](imagenes/datos-de-conexion.png)
-   Recuerda que los datos de conexión son:
-   - Usuario: introabd
-   - Clave: introabd1234
+   ```sql
+   DROP DATABASE IF EXISTS Nombre;
+   ```
 
-   __Nota:__ No usar este usuario para colocar información sensible.
+   para evitar que se genere un error en caso de que la base de datos ya no exista y se intente borrar de nuevo.
 
-   ![Compass conectado a MongoDB Atlas](imagenes/compass-conectado.png)
-   En este punto __Compass__ ya estará conectado al __Cluster0__ que como se puede ver en la columna izquierda consta de 3 instancias de MongoDB corriendo en paralelo, lo que se puede escalar según las necesidades.
+1. Como paso final, se creará nuevamente la base de datos y se hará uso de ella como la base de datos actual, para ello se usará el comando `USE Nombre`
 
-[`Anterior`](../Readme.md#configuración-de-mongodb-en-la-nube) | [`Siguiente`](../Readme.md#operaciones-con-bases-de-datos-1)   
+   ![imagen](imagenes/s7e13.png)
+
+[`Anterior`](../Readme.md#operaciones-con-bases-de-datos) | [`Siguiente`](../Readme.md#realizando-operaciones-con-tablas)      
+
+</div>

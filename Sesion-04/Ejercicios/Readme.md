@@ -1,52 +1,79 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejercicios`
-	
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Proyecto
+
 ## Ejercicios Sesión 4
 
-<div style="text-align: justify;">
-
-### 1. Objetivos :dart: 
-
-- Aplicar los conceptos adquiridos durante la sesión.
+### 1. Objetivos :dart:
+- Que el alumno comprenda la estructura de documentos de una base de datos __MongoDB__
+- Que el alumno se familiarice con la notación JSON
 
 ### 2. Requisitos :clipboard:
-
-1. MongoDB Compass instalado.
+1. __MongoDB Compass__ iniciado y conectado al servidor de MongoDB
+1. Base de datos __MiNombre__ y Colecciones `users`, `movies` y `ratings` creadas
 
 ### 3. Desarrollo :rocket:
+A continuación se realizaran algunas operaciones de agregar, modificar y eliminar un documento JSON en una Colección.
 
-Las consultas se realizarán sobre la base `sample_training`.
+1. Agregar los siguientes registros en formato CSV a la Colección `movies`
 
-Todas las consultas que realices deberás mantenerlas dentro del MongoDB Compass. Para hacer esto, da clic en el botón con los puntos `···` y en `Toogle Query History`. Busca la última consulta y agregala a favoritos presionando el íncono con la estrella :star:.
+   ```csv
+   4000,Avengers: Endgame (2019),Fantasy|Sci-Fi
+   4001,Glass (2019),Drama|Fantasy
+   ```
+   Incluyendo nombres de columnas quedaría:
+   ```csv
+   id,titulo,genres
+   4000,Avengers: Endgame (2019),Fantasy|Sci-Fi
+   4001,Glass (2019),Drama|Fantasy
+   ```
+   Y entonces el correspondiente formato JSON será:
+   ```json
+   {
+     id:"4000",
+     titulo:"Avengers: Endgame (2019)",
+     genres:"Fantasy|Sci-Fi"
+   }
+   {
+     id:"4001",
+     titulo:"Glass (2019)",
+     genres:"Drama|Fantasy"
+   }
+   ```
+   Ahora ir a __MongoDB Compass__ y agregar ambos documentos:
 
-1. Obtén los datos de contacto de cada compañía.
+   ![Adicionando campos u objetos](imagenes/adicionando-datos.png)
 
-2. Obtén la fuente de cada tweet.
+   Al final presionar el botón __INSERT__
 
-3. Obtén el nombre de todas las compañias fundadas en octubre.
+   Para poder observar nuestros documentos en la lista hay que realizar un filtro
+   ```json
+   {id: {$in: ["4000", "4001"]}}
+   ```
 
-4. Obtén el nombre de todas las compañías fundadas en 2008.
+   ![Documentos en la colección](imagenes/documentos-en-coleccion.png)
 
-5. Obtén todos los *post* del autor `machine`.
+1. Modificar el documento con `id=4001` en la Colección `movies` para que contenga la siguiente información:
 
-6. Obtén todos los tweets provenientes de la `web`.
+   ```json
+   {
+     id:"4001",
+     titulo:"Glass (2019)",
+     genres:"Drama|Fantasy",
+     valoraciones: [
+       {
+         userid: "1563",
+         movieid: "4001",
+         rating: "4"
+       },
+       {
+         userid: "434",
+         movieid: "4001",
+         rating: "5"
+       }
+     ]
+   }
+   ```
+   Luego de presionar el botón __INSERT__ la lista de los dos documentos deberá de ser la siguiente:
 
-7. Obtén todas las compañías fundadas en octubre del 2008.
+   ![Lista de documentos en la colección](imagenes/documentos-en-coleccion-2.png)
 
-8. Obtén todas las compañias con más de 50 empleados. 
-
-9. Obtén las historias con número de comentarios entre 10 y 30.
-
-10. Obtén la empresa con el menor número de empleados.
-
-11. Obtén la empresa con el mayor número de empleados.
-
-12. Obtén la historia más comentada.
-
-13. Obtén la historia menos comentada.
-
-**¡¡¡MUCHA SUERTE!!!**
-
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
-
-</div>
-
+[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)      
