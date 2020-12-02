@@ -15,10 +15,10 @@ principal objetivo conocer los principales conceptos que ahondan las bases de da
  - [Sesión 1: Fundamentos de SQL](Sesion-01/Readme.md) 
  - [Sesión 2: Agrupaciones y subconsultas](Sesion-02/Readme.md) 
  - [Sesión 3: Joins y Vistas](Sesion-03/Readme.md) 
- - [Sesión 4: Fundamentos de MongoDB](Sesion-04/Readme.md) 
- - [Sesión 5: Consultas en MongoDB](Sesion-05/Readme.md) 
- - [Sesión 6: Agregaciones](Sesion-06/Readme.md) 
- - [Sesión 7: Configuración de Bases de Datos Locales](Sesion-07/Readme.md) 
+ - [Sesión 4: Configuración de Bases de Datos Locales](Sesion-04/Readme.md) 
+ - [Sesión 5: Fundamentos de MongoDB](Sesion-05/Readme.md) 
+ - [Sesión 6: Consultas en MongoDB](Sesion-06/Readme.md) 
+ - [Sesión 7: Agregaciones](Sesion-07/Readme.md) 
  - [Sesión 8: *Query competition*](Sesion-08/Readme.md)  
  
 ### Bases de Datos  

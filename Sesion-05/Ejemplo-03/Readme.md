@@ -1,12 +1,13 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 3`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 3`
 
-## Ejemplo 3: Introducción a las agregaciones
+## Ejemplo 3: Colecciones, Documentos y Proyecciones
 
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart: 
+### 1. Objetivos :dart:
 
-- Entender el concepto de agregación y su similitud con los agrupamientos y subconsultas de __SQL__.
+- Usar la interfaz de MongoDB para listar las colecciones y documentos de una base de datos.
+- Realizar filtros por proyección.
 
 ### 2. Requisitos :clipboard:
 
@@ -14,60 +15,39 @@
 
 ### 3. Desarrollo :rocket:
 
-Cuando revisamos __SQL__ usamos agrupamientos que aplicaban una función a una columna reduciéndola a un valor que podía ser una suma, un conteo o calcular un promedio, por ejemplo. 
+1. Abre MongoDB Compass. En esta primera pantalla se muestran las bases de datos contenidas en el servidor. Da clic en la base de datos `sample_mflix`. A partir de ahora usaremos esa base de datos para los retos y ejemplos dentro de la sesión.
 
-En __MongoDB__ podemos realizar lo mismo mediante el uso de agregaciones. Las agregaciones, permiten realizar distintos filtros usando *capas*. Una capa es el resultado de la aplicación de algún filtro, proyección, agrupamiento, ordenamiento, etc. Cada capa puede usarse en una nueva capa. La primera capa siempre será la colección completa.
+   ![imagen](imagenes/s4e21.png)
 
-Al conjunto de capas generadas en una agregación se le conoce como *pipeline*.
-
-Por ejemplo, queremos saber cuál es la propiedad con mayor número de servicios (`amenities`) de la colección `sample_airbnb.listingsAndReviews`. Para usar agregaciones, daremos clic en la pestaña `Aggregations` de Compass. 
-
-- Primero debemos obtener la longitud del arreglo `amenities` para saber el número de servicios de cada documento. Para esto, seleccionamos `addFields` en la primera capa.
-
-   Con `addFields` podemos agregar campos como resultado de aplicar funciones a otros campos de la colección. De esta forma agregaremos el tamaño del arreglo como columna.
+2. En la ventana que apareció se muestran las **colecciones** para la base de datos que elegiste. También puedes navegar entre las colecciones con el menú desplegable de la izquierda. Da clic en la colección `users`.
    
-   Llamaremos a este campo servicios y para calcularlo usaremos la función `$size`. 
+   ![imagen](imagenes/s4e22.png)
+
+3. Ahora estás apreciando los documentos que hay dentro de la colección `users`. En el menú que se encuentra sobre los documentos, puedes cambiar el formato en que se muestran, por defecto, la forma de visualizarlos es en formato de lista aunque hay otras opciones como JSON o formato de tabla como en SQL.
+
+   ![imagen](imagenes/s4e23.png)
    
-   ```json
-   {
-      servicios: {$size: "$amenities"}
-   }
+4. Por defecto, la interfaz de MongoDB Compass muestra todos los campos de todos los documentos, esto es equivalente a ejecutar la instrucción de SQL:
+
+   ```sql
+   SELECT *
+   FROM users;
    ```
    
-   ![imagen](imagenes/s5e31.png)
+   Para mostrar algún campo en específico, como lo hacíamos en SQL, usaremos proyecciones. Para usar una proyección, hay que dar clic en el botón `OPTIONS`. Se abrirá un formulario, llenaremos el campo llamado `PROJECT`. 
    
-- Como el único dato que nos interesa es el número de servicios, sólo proyectaremos este resultado, para esto crearemos una nueva capa con `ADD STAGE` y elegiremos `$project`. Proyectamos el campo `name` y  `servicios` poniendo un `1` y quitamos el campo `_id` poniendo un 0.
-
+   En las bases de datos relacionales, la forma de comunicarnos con la base es mediante SQL, en MongoDB lo haremos a través de JSON. De esta forma, para proyectar los datos, usaremos un JSON, separando cada campo deseado, con un valor de 1. Por ejemplo, si queremos obtener únicamente el nombre y correo del usuario, escribimos lo siguiente.
+   
    ```json
-   {
-      name: 1,
-      servicios: 1,
-      _id: 0
-   }
+   {name:1, email:1}
    ```
    
-   ![imagen](imagenes/s5e32.png)
+   Para mostrar la proyección, damos clic en el botón `FIND`.
    
-- Ahora lo ordenamos añadiendo otra capa y usando `$sort`, recuerda -1 para descendente, 1 para ascendente.
+   ![imagen](imagenes/s4e24.png)
 
-   ```json
-   {
-      servicios: -1
-   }
-   ```
-   
-   ![imagen](imagenes/s5e33.png)
-   
-- Finalmente, limitamos la consulta a un registro usando `$limit`.
+**¡Felicidades! Haz realizado tu primera consulta en una base de datos con MongoDB**
 
-   ```json
-   {
-      1
-   }
-   ```
-   
-   ![imagen](imagenes/s5e34.png)
-
-[`Anterior`](../Readme.md#introducción-a-las-agregaciones) | [`Siguiente`](../Reto-03/Readme.md)
+[`Anterior`](../Readme.md#colecciones-documentos-y-proyecciones) | [`Siguiente`](../Reto-01/Readme.md)
 
 </div>

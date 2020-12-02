@@ -1,133 +1,76 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Ejemplo 2
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejemplo 2`
 
-## Ejemplo 2: Realizando operaciones con tablas
+## Ejemplo 2: Asociación de colecciones
 
-### 1. Objetivos :dart:
- - Conocer las operaciones SQL para administrar tablas
- - Crear una tabla acorde a los datos
+<div style="text-align: justify;">
+
+### 1. Objetivos :dart: 
+
+- Asociar colecciones mediante sus campos en común, usando la agregación `$lookup`.
 
 ### 2. Requisitos :clipboard:
-- Servidor __MySQL__ instalado en tu equipo.
+
+1. MongoDB Compass instalado.
 
 ### 3. Desarrollo :rocket:
 
----
+En la base de datos, existen varias colecciones que pueden asociarse. Por ejemplo la colección `comments` tiene la siguiente estructura:
 
-<img src="../imagenes/tabla.gif" align="right" height="170" width="200"> 
+![imagen](imagenes/s6e21.png)
 
-:warning: <ins>**IMPORTANTE**</ins>
+Sin embargo, para conocer la película sobre la cual se hizo el comentario, es necesario consultar la colección `movies`. Y buscar el id que leímos de la colección `comments`.
 
-_En este ejemplo trabajaremos con la instancia de __MySQL__ que instalaste y configuraste en el *Prework* de la sesión_.
+![imagen](imagenes/s6e22.png)
 
-_NO REALICES LOS EJEMPLOS NI RETOS EN EL SERVIDOR DE BEDU._ :pray: 
+Para facilitar esta búsqueda podemos usar una agregación `$lookup` que permite asociar dos colecciones. Algo similar a la operación `JOIN` de `SQL`.
 
-_Si no sigues esta indicación... ¡Hay Tabla!_ :eyes:
+Agregamos la agregación `$lookup` con el siguiente json:
 
----
+```json
+{
+  from: 'movies',
+  localField: 'movie_id',
+  foreignField: '_id',
+  as: 'pelicula'
+}
+```
 
-1. Comenzaremos descargando un conjunto de datos para ilustrar el proceso de carga de archivos. El archivo se ecuentra [aquí](http://files.grouplens.org/datasets/movielens/ml-1m.zip). Descarga el archivo y extraelo en tu computadora. 
+Esto nos indica que la colección actual (`comments`) se asociará con la conexión `movies` que el campo que tomaremos para asociarlas será `comments.movie_id` y `movies._id` respectivamente y que los resultados serán almacenados en un arreglo llamado `pelicula`.
 
-1. Antes de crear una tabla, primero se revisará la estructura de los datos y la documentación para el archivo `users.csv`
+![imagen](imagenes/s6e23.png)
 
-   Primero revisamos el contenido del archivo. Puedes abrirlo en un editor de textos como __Notepad__ o incluso en el __Bloc de notas__.
+Elegimos únicamente los campos de interés, primero extrayendo el nombre del objeto que envuelve el arreglo y posteriormente proyectando únicamente los campos deseados
 
-   ```
-   1,F,1,10,48067
-   2,M,56,16,70072
-   3,M,25,15,55117
-   4,M,45,7,02460
-   5,M,25,20,55455
-   6,F,50,9,55117
-   7,M,35,1,06810
-   8,M,25,12,11413
-   9,M,25,17,61614
-   10,F,35,1,95370
-   ...
-   ```
+- `$addFields`
 
-   Y luego se revisa la documentación, dentro del archivo `README`, igual abriendolo con un editor de textos.
+```json
+{
+  pelicula_objeto: {$arrayElemAt: ["$pelicula",0]}
+}
+```
 
-   ```
-   USERS FILE DESCRIPTION
-   ================================================================================
+- `$addFields`
 
-   User information is in the file "users.dat" and is in the following
-   format:
+```json
+{
+  pelicula_nombre: "$pelicula_objeto.title"
+}
+```
 
-   UserID::Gender::Age::Occupation::Zip-code
+- `$project`
 
-   All demographic information is provided voluntarily by the users and is
-   not checked for accuracy.  Only users who have provided some demographic
-   information are included in this data set.
+```
+{
+  _id:0,
+  pelicula_nombre:1,
+  name:1,
+  text:1
+}
+```
 
-   - Gender is denoted by a "M" for male and "F" for female
-   - Age is chosen from the following ranges:
+**No cierres, este *pipeline*, pues lo usaremos más adelante.**
 
-           *  1:  "Under 18"
-           * 18:  "18-24"
-           * 25:  "25-34"
-           * 35:  "35-44"
-           * 45:  "45-49"
-           * 50:  "50-55"
-           * 56:  "56+"
+![imagen](imagenes/s6e24.png)
 
-   ...
-   ```
+[`Anterior`](../Readme.md#asociación-de-colecciones) | [`Siguiente`](../Reto-02/Readme.md)   
 
-   Así que se definen los siguientes datos y tipos para crear la tabla `Users` en __MySQL__:
-   - `id INT PRIMARY KEY`
-   - `genero VARCHAR(1)`
-   - `edad INT`
-   - `ocup INT`
-   - `cp VARCHAR(20)`
-
-   El `id` será la llave primaria para la tabla, esto hay que indicarlo para que los valores sean únicos. Adicionalmente, se crea un índice para acelerar las búsquedas.
-
-   Para `edad` y `ocup` por el rango de datos que no va más allá de los 256 se podría usar el tipo `INT1` que es un entero que usa un sólo byte, pero esto es opcional.
-
-   Para `cp` se ha definido una longitud de 20 porque se desconoce el tamaño máximo, esto se puede optimizar más adelante.   
-
-1. Crear la tabla `users` (se ha usado el mismo nombre del archivo sin la extensión siempre y cuando no sea extremadamente largo) usando la instrucción __SQL__:
-
-   ```sql
-   CREATE TABLE nombre (
-      campo1 tipo, 
-      campo2, tipo, 
-      ..., 
-      campoN tipo
-   );
-   ```
-
-   ![imagen](imagenes/s7e21.png)
-
-   Recuerda que cada instrucción en __SQL__ termina siempre con punto y coma.
-
-   **Sugerencia.**  Cuando el comando `CREATE TABLE` sea usado con *scripts* para automatizar tareas, se sugiere usar la siguiente variante:
-
-   ```sql
-   CREATE TABLE IF NOT EXISTS nombre;
-   ```
-
-   para evitar que se marque un error en caso de que la tabla ya exista y se intente crear de nuevo.
-
-1. Otra operación a realizar es la de eliminar una tabla, eso se hace con el comando `DROP TABLE nombre`
-
-   Así que para eliminar la tabla `users` se ejecuta el comando:
-
-   ![imagen](imagenes/s7e22.png)
-   
-   **Sugerencia.**  Cuando este comando sea usado con *scripts* para automatizar tareas, se sugiere usar la siguiente variante:
-   
-   ```sql
-   DROP TABLE IF EXISTS nombre;
-   ```
-
-   para evitar que se marque un error en caso de que la tabla ya no exista y se intente borrar de nuevo.
-
-   Si deseas, puedes validar que la tabla ya no exista con el comando `SHOW TABLES`.
-
-1. Finalmente se crea nuevamente la tabla `users` y se valida que exista.
-
-   ![image](imagenes/s7e23.png)
-
-[`Anterior`](../Readme.md#relacionado-operaciones-con-tablas) | [`Siguiente`](../Reto-01/Readme.md)   

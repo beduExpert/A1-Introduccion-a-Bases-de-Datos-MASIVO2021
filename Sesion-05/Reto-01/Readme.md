@@ -1,12 +1,12 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Reto 1`
 	
-## Reto 1: Expresiones regulares
+## Reto 1: Colecciones, Documentos y Proyecciones
 
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart: 
+### 1. Objetivos :dart:
 
-- Poner en práctica el uso de expresiones regulares.
+- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
 
 ### 2. Requisitos :clipboard:
 
@@ -14,53 +14,43 @@
 
 ### 3. Desarrollo :rocket:
 
-Usando la base de datos `sample_airbnblistingsAndReviews`, realiza los siguientes filtros:
+Usando la base de datos `sample_mflix`, proyecta los datos que se solicitan.
 
-- Propiedades que no permitan fiestas.
-- Propiedades que admitan mascotas.
-- Propiedades que no permitan fumadores.
-- Propiedades que no permitan fiestas ni fumadores.
+- Fecha, nombre y texto de cada comentario.
+- Título, elenco y año de cada película.
+- Nombre y contraseña de cada usuario.
 
 <details><summary>Solución</summary>
 <p>
 
-- Propiedades que no permitan fiestas.
+- Fecha, nombre y texto de cada comentario.
 
    ```json
-   {house_rules: /No Parties/i}
+   {date:1, name:1, text:1}
    ```
    
-   ![imagen](imagenes/s5e11.png)
+   ![imagen](imagenes/s4r11.png)
 
-- Propiedades que admitan mascotas.
+- Título, elenco y año de cada película.
 
    ```json
-   {house_rules: /Pets Allowed/i}
+   {title:1, cast:1, year:1}
    ```
    
-   ![imagen](imagenes/s5e12.png)
+   ![imagen](imagenes/s4r12.png)
    
-- Propiedades que no permitan fumadores.
+- Nombre y contraseña de cada usuario.
 
    ```json
-   {house_rules: /No Smoking/i}	
+   {name:1, password:1}	
    ```
-   ![imagen](imagenes/s5e13.png) 
-   
-- Propiedades que no permitan fiestas ni fumadores.
-
-   ```json
-   {house_rules: /No Smoking|No Parties/i}
-   ```
-   
-   ![imagen](imagenes/s5e14.png)
-
+   ![imagen](imagenes/s4r13.png) 
 
 </p>
-</details>
+</details> 
 
 <br/>
 
-[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#notación-punto-y-arreglos)
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#filtros-básicos)
 
 </div>

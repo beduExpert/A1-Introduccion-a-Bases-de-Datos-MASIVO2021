@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejercicios`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejercicios`
 	
-## Ejercicios Sesión 6
+## Ejercicios Sesión 5
 
 <div style="text-align: justify;">
 
@@ -14,16 +14,12 @@
 
 ### 3. Desarrollo :rocket:
 
-Continuaremos trabajando con la base de datos de películas y sus comentarios.
+Para este proyecto deberás practicar en el uso de agregaciones, pues serán usadas durante la siguiente sesión.
 
-El ejercicio consiste en obtener, por país, el número de películas que hay de cada genero. Un ejemplo de salida, en formato de tabla,sería:
+La base de datos y colección que debes usar es `sample_airbnb.listingsAndReviews`.
 
-| pais | genero | peliculas |
-| ---- | ------ | --------- |
-| USA  | Short  | 10        |
-| USA  | Drama  | 20        |
-| ...  | ...    | ...       |
+El proyecto consiste en obtener todas las publicaciones que tengan 50 o más comentarios, que la valoración sea mayor o igual a 80, que cuenten con conexión a Internet vía cable y estén ubicadas en Brazil.
 
 **¡¡¡MUCHA SUERTE!!!**
 
-[`Anterior`](../Readme.md#3-Ejercicios-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)   
+[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#3-proyecto-hammer)

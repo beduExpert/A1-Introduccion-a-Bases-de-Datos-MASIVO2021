@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Reto 2`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 2`
 	
-## Reto 2: Asociación de colecciones
+## Reto 2: Notación punto y arreglos
 
 <div style="text-align: justify;">
 
@@ -14,62 +14,22 @@
 
 ### 3. Desarrollo :rocket:
 
-Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
-
-**NO CIERES ESTE *PIPELINE* PUES LO USAREMOS MÁS ADELANTE**
+Usando la colección `sample_airbnb.listingsAndReviews`, agrega un filtro que permita obtener todas las publicaciones que tengan 50 o más comentarios, que la valoración sea mayor o igual a 80, que cuenten con conexión a Internet vía cable y estén ubicada en Brazil.
 
 <details><summary>Solución</summary>
 <p>
-	
-Primero, obtenemos la relación con `$lookup`.	
 
 ```json
-{
-  from: 'users',
-  localField: 'name',
-  foreignField: 'name',
-  as: 'usuario'
-}
+{number_of_reviews: {$gte: 50}, "review_scores.review_scores_rating": {$gte: 80}, amenities: {$in: [/Ethernet/]}, "address.country_code": "BR" }
 ```
 
-![imagen](imagenes/s6r21.png)
-
-Posteriormente, obtenemos el objeto del arreglo, su campo `password` y finalmente proyectamos los datos necesarios.
-
-- `$addFields`
-
-```json
-{
-  usuario_objeto: {$arrayElemAt: ["$usuario", 0]}
-}
-```
-
-- `$addFields`
-
-```json
-{
-  usuario_password: "$usuario_objeto.password"
-}
-```
-
-- `$project`
-
-```json
-{
-  _id:0,
-  name:1,
-  email:1,
-  usuario_password:1
-}
-```
-
-![imagen](imagenes/s6r22.png)
+   ![imagen](imagenes/s5r21.png)
 
 </p>
 </details> 
 
 <br/>
 
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#generación-de-vistas)   
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#introducción-a-las-agregaciones)
 
 </div>

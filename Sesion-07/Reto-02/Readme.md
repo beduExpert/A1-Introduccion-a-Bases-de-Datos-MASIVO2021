@@ -1,84 +1,75 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > Reto 2
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Reto 2`
+	
+## Reto 2: Asociación de colecciones
 
-## Reto 2: Importando datos a una tabla en formato CSV
+<div style="text-align: justify;">
 
-### 1. Objetivos :dart:
-- Aplicar el procedimiento para importación de datos a una tabla
-- Validar la correcta importación de los datos
+### 1. Objetivos :dart: 
+
+- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
 
 ### 2. Requisitos :clipboard:
-- Servidor __MySQL__ instalado en tu equipo
+
+1. MongoDB Compass instalado.
 
 ### 3. Desarrollo :rocket:
 
----
+Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
 
-<img src="../imagenes/tabla.gif" align="right" height="170" width="200"> 
-
-:warning: <ins>**IMPORTANTE**</ins>
-
-_En este reto debes trabajar con la instancia de __MySQL__ que instalaste y configuraste en el *Prework* de la sesión_.
-
-_NO REALICES LOS EJEMPLOS NI RETOS EN EL SERVIDOR DE BEDU._ :pray: 
-
-_Si no sigues esta indicación... ¡Hay Tabla!_ :eyes:
-
----
-
-1. Usando como base el archivo `movies.dat`, limpiarlo e importar los datos en la tabla `movies` creada en el Reto 1.
-
-1. Usando como base el archivo `ratings.dat`, limpiarlo e importar los datos en la tabla `ratings` creada en el Reto 2.
+**NO CIERES ESTE *PIPELINE* PUES LO USAREMOS MÁS ADELANTE**
 
 <details><summary>Solución</summary>
 <p>
+	
+Primero, obtenemos la relación con `$lookup`.	
 
-1. Agregamos el encabezado correspondiente a `movies.dat` y reemplazamos el símbolo `::` por `,`. Guardamos el archivo como `movies.csv`.
+```json
+{
+  from: 'users',
+  localField: 'name',
+  foreignField: 'name',
+  as: 'usuario'
+}
+```
 
-   ```
-   id,title,generos
-   1,Toy Story (1995),Animation|Children's|Comedy
-   2,Jumanji (1995),Adventure|Children's|Fantasy
-   3,Grumpier Old Men (1995),Comedy|Romance
-   4,Waiting to Exhale (1995),Comedy|Drama
-   5,Father of the Bride Part II (1995),Comedy
-   6,Heat (1995),Action|Crime|Thriller
-   7,Sabrina (1995),Comedy|Romance
-   8,Tom and Huck (1995),Adventure|Children's
-   9,Sudden Death (1995),Action
-   10,GoldenEye (1995),Action|Adventure|Thriller
-   ...
-   ```
+![imagen](imagenes/s6r21.png)
 
-1. Agregamos el encabezado correspondiente a `ratings.dat` y reemplazamos el símbolo `::` por `,`. Guardamos el archivo como `ratings.csv`.
+Posteriormente, obtenemos el objeto del arreglo, su campo `password` y finalmente proyectamos los datos necesarios.
 
-   ```
-   userid,movieid,rating,time_stamp
-   1,1193,5,978300760
-   1,661,3,978302109
-   1,914,3,978301968
-   1,3408,4,978300275
-   1,2355,5,978824291
-   1,1197,3,978302268
-   1,1287,5,978302039
-   1,2804,5,978300719
-   1,594,4,978302268
-   ...
-   ```
+- `$addFields`
 
-1. Cargamos `movies.csv` y `ratings.csv` usando __MySQL Workbench__. Comprobamos los resultados con las siguientes consultas.
+```json
+{
+  usuario_objeto: {$arrayElemAt: ["$usuario", 0]}
+}
+```
 
-   ```sql
-   SELECT *
-   FROM movies
-   LIMIT 10;
+- `$addFields`
 
-   SELECT *
-   FROM ratings
-   LIMIT 10;
-   ```
+```json
+{
+  usuario_password: "$usuario_objeto.password"
+}
+```
+
+- `$project`
+
+```json
+{
+  _id:0,
+  name:1,
+  email:1,
+  usuario_password:1
+}
+```
+
+![imagen](imagenes/s6r22.png)
 
 </p>
-</details>
+</details> 
+
 <br/>
 
-[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#configuración-de-mongodb-en-la-nube)
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#generación-de-vistas)   
+
+</div>
