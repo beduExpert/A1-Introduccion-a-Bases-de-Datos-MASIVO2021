@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Reto 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 1`
 	
 ## Reto 1: Colecciones, Documentos y Proyecciones
 
@@ -51,6 +51,6 @@ Usando la base de datos `sample_mflix`, proyecta los datos que se solicitan.
 
 <br/>
 
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#filtros-básicos)
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#filtros-básicos)
 
 </div>
