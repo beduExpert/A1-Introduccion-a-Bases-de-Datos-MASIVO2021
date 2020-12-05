@@ -94,4 +94,18 @@
    
    ![imagen](imagenes/s7e39.png)
 
+1. Adicionalmente, podemos añadir registros individualmente usando la primitiva `INSERT INTO`. Para ello necesitamos el nombre de las columnas y por supuesto los valores que insertaremos. Por ejemplo, supongamos que queremos insertar un usuario con los datos siguientes:
+
+   - id: 7000
+   - genero: F
+   - edad: 25
+   - ocup: 20
+   - cp: 03100
+
+   La instrucción correspondiente sería:
+
+   ```sql
+   INSERT INTO users (id,genero,edad,ocup,cp) VALUES (7000,'F',25,20,'03100');   
+   ```
+
 [`Anterior`](../Readme.md#importando-datos-a-una-tabla-en-formato-csv) | [`Siguiente`](../Reto-02/Readme.md)      

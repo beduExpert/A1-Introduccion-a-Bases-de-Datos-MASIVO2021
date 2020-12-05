@@ -14,7 +14,6 @@
 1. Definir los campos y tipos de datos para la tabla `movies` haciendo uso de los archivos `movies.dat` y `README`.
 
 1. Crear la tabla `movies` (recuerda usar el mismo nombre del archivo sin la extensión para vincular nombres de tablas con archivos).
-
 1. Definir los campos y tipos de datos para la tabla `ratings` haciendo uso de los archivos `ratings.dat` y `README`.
 
 1. Crear la tabla ratings (recuerda usar el mismo nombre del archivo sin la extensión para vincular nombres de tablas con archivos)
@@ -115,16 +114,6 @@
    - Ratings are made on a 5-star scale (whole-star ratings only)
    - Timestamp is represented in seconds since the epoch as returned by time(2)
    - Each user has at least 20 ratings
-
-   USERS FILE DESCRIPTION
-   ================================================================================
-
-   User information is in the file "users.dat" and is in the following
-   format:
-
-   UserID::Gender::Age::Occupation::Zip-code
-
-   All demographic information is provided voluntarily by the users and is
    ...
    ```
 
@@ -134,14 +123,16 @@
    - __rating__ INT
    - __time_stamp__ BIGINT
 
-1. Se crea la tabla con:
+1. Observa además, que hay dos llaves foráneas, en este caso asociadas con las tablas `users` y `movies`. Se crea la tabla con:
 
    ```sql
    CREATE TABLE IF NOT EXISTS ratings (
       userid INT, 
       movieid INT, 
       rating INT, 
-      time_stamp BIGINT
+      time_stamp BIGINT,
+      FOREIGN KEY (userid) REFERENCES users(id),
+      FOREIGN KEY (movieid) REFERENCES movies(id)
    );
    ```
 

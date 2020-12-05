@@ -91,4 +91,4 @@ A continuación se realizaran las operaciones de agregar, modificar y eliminar u
    Da clic sobre el botón __UPDATE__ para guardar los cambios.
 
 
-[`Anterior`](../Reto-03/Readme.md) | [`Siguiente`](../Proyecto/Readme.md)      
+[`Anterior`](../Reto-03/Readme.md) | [`Siguiente`](../Ejercicios/Readme.md)      

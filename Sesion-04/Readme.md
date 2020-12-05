@@ -68,6 +68,27 @@ Un archivo *CSV* se conforma de un encabezado que indica el nombre de las column
 #### Parte II: Configuración de Bases No Relacionales
 
 ---
+
+##### <ins>Introducción a __MongoDB__</ins>
+<img src="imagenes/imagen.png" align="right" height="300" width="300"> 
+
+MongoDB es un Gestor de Bases de Datos no relacionales orientado a documentos que hace uso de la orientación llave/valor. Su nombre proviene del inglés *humongous* y usa el formato __BSON__ (__JSON__ compilado) para almacenar datos. Es uno de los gestores más conocidos, al mismo nivel que MySQL de las bases de datos relacionales. Algunos conceptos asociados con este tipo de bases son:
+
+- JSON
+- Documento
+- Colección
+
+```
+Tabla -> Colección
+
+Registro -> Documento
+
+Columna -> Llave
+```
+
+---
+
+
 ##### <ins>Configuración de __MongoDB__ en la nube</ins>
 <img src="imagenes/imagen4.jpg" align="right" height="200" width="300">
 

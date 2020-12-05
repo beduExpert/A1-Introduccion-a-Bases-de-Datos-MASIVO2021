@@ -11,9 +11,15 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Usando como base el archivo `movies.dat`, limpiarlo e importar los datos en la tabla `movies` creada en el Reto 1.
+1. Usando como base el archivo `movies.dat`, limpiarlo e importar los datos en la tabla `movies` creada en el Reto 1.   
 
-1. Usando como base el archivo `ratings.dat`, limpiarlo e importar los datos en la tabla `ratings` creada en el Reto 2.
+   **Importante:** Este archivo presenta un problema muy común de *encoding*, es decir, la codificación con la que fue definido, no es reconocida por __MySQL__. Para solucionar este problema, elige una codificación diferente al momento de cargar los datos.
+
+1. Usando como base el archivo `ratings.dat`, limpiarlo e importar los datos en la tabla `ratings` creada en el Reto 2.   
+
+   **Importante:** Como podrás notar, este archivo tiene demasiados registros, de manera que es normal que la carga sea muy lenta. Esto es algo muy común cuando nos enfrentamos a la carga de archivos. Si ya lleva mucho tiempo y no finaliza, no te preocupes, puedes cancelar la carga.
+
+1. Finalmente, añade un registro en cada tabla usando `INSERT INTO`.
 
 <details><summary>Solución</summary>
 <p>
@@ -62,6 +68,67 @@
    FROM ratings
    LIMIT 10;
    ```
+
+1. Finalmente insertamos los registros correspondientes:
+
+   ```sql
+   INSERT INTO movies(id,title,generos) VALUES (5000,'Avengers', 'Adventures');
+
+   -- Si añadiste llaves foráneas, recuerda que debes añadir primero los registros en las tablas users y movies.
+   INSERT INTO ratings(userid,movieid,rating,time_stamp) VALUES (1,1193,2,978300760);
+   ``` 
+
+#### Opcional
+
+Otra forma de cargar grandes archivos de datos, debido a la lentitud de __Workbench__ es usar comandos específicos. Listamos el proceso a continuación. Esto puede cambiar ligeramente de equipo en equipo. En caso de no funcionar recuerda: *Google es tu amigo*. Más detalles puedes consultarlos [aquí](https://forums.mysql.com/read.php?152,674208,674208). 
+
+1. Revisa la configuración de la variable `local_infile`, si muestra un valor `ON`, ve al paso 3, en caso contrario, ve al paso 2.
+
+   ```sql
+   SHOW VARIABLES LIKE "local_infile";
+   ```
+
+2. Ejecuta el siguiente comando:
+
+   ```sql
+   SET GLOBAL local infile = 'ON';
+   ```
+
+3. Revisa la configuración de la variable `secure_file_priv`, esto nos dará la ruta en nuestro equipo que tiene configurada __MySQL Server__ para cargar archivos:
+
+   ```sql
+   SHOW VARIABLES LIKE "secure_file_priv";
+   ```
+
+   Por ejemplo:
+
+   `C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\`
+
+4. Copia el archivo que deseas cargar en la ruta dada.
+
+5. Ejecuta el siguiente comando:
+
+   ```sql
+   LOAD DATA INFILE 'C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\ratings.csv' 
+   INTO TABLE ratings 
+   FIELDS TERMINATED BY ',' 
+   ENCLOSED BY '"' 
+   LINES TERMINATED BY '\n'
+   IGNORE 1 ROWS; 
+   ```
+
+   Algunos sistemas operativos (__Windows__), requieren cambiar la posición de las diagonales:
+
+   ```sql
+   LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/ratings.csv' 
+   INTO TABLE ratings 
+   FIELDS TERMINATED BY ',' 
+   ENCLOSED BY '"' 
+   LINES TERMINATED BY '\n'
+   IGNORE 1 ROWS; 
+   ```
+
+   Observa cómo la carga lleva simplemente segundos.
 
 </p>
 </details>
