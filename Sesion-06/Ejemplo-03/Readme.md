@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 3`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejemplo 3`
 
 ## Ejemplo 3: Introducción a las agregaciones
 
@@ -16,7 +16,7 @@
 
 Cuando revisamos __SQL__ usamos agrupamientos que aplicaban una función a una columna reduciéndola a un valor que podía ser una suma, un conteo o calcular un promedio, por ejemplo. 
 
-En __MongoDB__ podemos realizar lo mismo mediante el uso de agregaciones. Las agregaciones, permiten realizar distintos filtros usando *capas*. Una capa es el resultado de la aplicación de algún filtro, proyección, agrupamiento, ordenamiento, etc. Cada capa puede usarse en una nueva capa. La primera capa siempre será la colección completa.
+En __MongoDB__ podemos realizar lo mismo mediante el uso de agregaciones. Las agregaciones, permiten realizar distintos filtros usando *capas*. Una capa es el resultado de la aplicación de algún filtro, proyección, agrupamiento, ordienamiento, etc. Cada capa puede usarse en una nueva capa. La primera capa siempre será la colección completa.
 
 Al conjunto de capas generadas en una agregación se le conoce como *pipeline*.
 
@@ -26,7 +26,7 @@ Por ejemplo, queremos saber cuál es la propiedad con mayor número de servicios
 
    Con `addFields` podemos agregar campos como resultado de aplicar funciones a otros campos de la colección. De esta forma agregaremos el tamaño del arreglo como columna.
    
-   Llamaremos a este campo servicios y para calcularlo usaremos la función `$size`. 
+   Llamaremos a este campo `servicios` y para calcularlo usaremos la función `$size`. 
    
    ```json
    {

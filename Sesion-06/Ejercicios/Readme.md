@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejercicios`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejercicios`
 	
-## Ejercicios Sesión 5
+## Ejercicios Sesión 6
 
 <div style="text-align: justify;">
 
@@ -14,12 +14,33 @@
 
 ### 3. Desarrollo :rocket:
 
-Para este proyecto deberás practicar en el uso de agregaciones, pues serán usadas durante la siguiente sesión.
+Para este ejercicio deberás practicar en el uso de agregaciones, pues serán usadas durante la siguiente sesión.
 
 La base de datos y colección que debes usar es `sample_airbnb.listingsAndReviews`.
 
-El proyecto consiste en obtener todas las publicaciones que tengan 50 o más comentarios, que la valoración sea mayor o igual a 80, que cuenten con conexión a Internet vía cable y estén ubicadas en Brazil.
+El ejercicio consiste en obtener todas las publicaciones que tengan 50 o más comentarios, que la valoración sea mayor o igual a 80, que cuenten con conexión a Internet vía cable y estén ubicadas en Brazil.
 
 **¡¡¡MUCHA SUERTE!!!**
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+<details><summary>Solución</summary>
+<p>
+	
+```json
+/**
+ * USANDO $match
+ * query: The query in MQL.
+ */
+{
+  number_of_reviews: {$gte:50},
+  "review_scores.review_scores_rating": {$gte: 80},
+  amenities: {$in: [/Ethernet/]},
+  "address.country_code": "BR" 
+}
+```
+
+</p>
+</details>
+
+<br/>
+
+[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)

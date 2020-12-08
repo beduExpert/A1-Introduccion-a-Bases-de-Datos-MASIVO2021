@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 5`
+[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 6`
 
-## Sesión 5: Consultas en MongoDB
+## Sesión 6: Consultas en MongoDB
 
 <img src="../imagenes/pizarron.png" align="right" height="100" width="100" hspace="10">
 <div style="text-align: justify;">
@@ -9,8 +9,8 @@
 
 - Entender qué es y cómo se usa una expresión regular.
 - Filtrar resultados mediante expresiones regulares.
-- Usar la notación punto para filtrar objetos anidados
-- Entender de manera básica qué es una agregación
+- Usar la notación punto para filtrar objetos anidados.
+- Entender de manera básica qué es una agregación.
 
 ### 2. Contenido :blue_book:
 
@@ -31,7 +31,7 @@ Existen distintos estándares que los lenguajes de programación y sistemas gest
 #### <ins>Notación punto y arreglos</ins>
 <img src="imagenes/imagen2.png" align="right" height="200" width="200">
 
-La notación punto es ampliamente usado en los lenguajes de programación orientados a objetos y permite acceder a los atributos de los mismos. Por ejemplo, si tenemos un objeto persona, usando la notación punto, podemos acceder a su nombre, edad, peso, etc.
+La notación punto es ampliamente usada en los lenguajes de programación orientados a objetos y permite acceder a los atributos de los mismos. Por ejemplo, si tenemos un objeto persona, usando la notación punto, podemos acceder a su nombre, edad, peso, etc.
 
 Con esta notación podemos obtener los campos de un objeto representado en __JSON__. De la misma forma, podemos acceder a los elementos de un arreglo si se conoce su índice, tal y como se hace en distintos lenguajes de programación.
 
@@ -55,11 +55,11 @@ El principio de cada *pipeline* siempre es la colección completa.
 
 ---	
 
-### 3. Ejercicios :hammer:
+### 3. Ejercicios para practicar :hammer:
 
-Aplica lo todo lo que aprendiste durante la sesión en estos ejercicios. 
+Aplica lo todo lo que aprendiste durante la sesión en esta serie de ejercicios. 
 
-- [**`EJERCICIOS SESIÓN 5`**](Ejercicios/Readme.md)
+- [**`EJERCICIOS SESIÓN 6`**](Ejercicios/Readme.md)
 
 </br>
 

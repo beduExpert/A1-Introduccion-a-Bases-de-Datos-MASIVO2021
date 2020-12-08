@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejemplo 1`
 
 ## Ejemplo 1: Expresiones regulares
 
@@ -19,7 +19,7 @@ En este ejemplo revisaremos el concepto de expresión regular. Éste es similar 
 
 1. Las expresiones regulares en MongoDB siguen un estándar, toda la información acerca de la sintaxis, puedes encontrarla en la siguiente [página](https://www.w3schools.com/jsref/jsref_obj_regexp.asp).
 
-   - Para iniciar, conectate al servidor de bases de datos del curso, las credenciales te las proporcionará el experto que te fue asignado, si tienes dudas, consútalo.
+   - Para iniciar, conectate al servidor de __MongoDB Atlas__.
    
    - Comencemos con un filtro sencillo. Dentro de la colección `sample_airbnb.listingsAndReviews` vamos a buscar aquellas propiedades que estén cerca de una estación del metro. Para ello, buscaremos la palabra `Metro`. Para ello, escribimos la siguiente consulta, recuerda que las expresiones se delimitan por diagonales.
    
