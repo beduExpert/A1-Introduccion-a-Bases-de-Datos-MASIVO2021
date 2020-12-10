@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../README.md) > `Sesión 6`
+[`Introducción a Bases de Datos`](../README.md) > `Sesión 7`
 
-## Sesión 6: Agregaciones
+## Sesión 7: Agregaciones
 
 <img src="../imagenes/pizarron.png" align="right" height="100" width="100" hspace="10">
 <div style="text-align: justify;">
@@ -79,7 +79,7 @@ Una vez creada la vista, podemos consultarla como a cualquier otra colección.
 
 Aplica lo todo lo que aprendiste durante la sesión con estos ejercicios.
 
-- [**`EJERCICIOS SESIÓN 6`**](Ejercicios/Readme.md)
+- [**`EJERCICIOS SESIÓN 7`**](Ejercicios/Readme.md)
 
 > *__Importante:__ Los ejercicios se plantean a manera de propuesta y pueden cambiarse de acuerdo con los tiempos de cada grupo y los temas en que la experta(o) considere debe profundizarse más.*   
 
