@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Proyecto
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 04`](../Readme.md) > Proyecto
 
 ## Ejercicios Sesión 4
 
@@ -76,4 +76,4 @@ A continuación se realizaran algunas operaciones de agregar, modificar y elimin
 
    ![Lista de documentos en la colección](imagenes/documentos-en-coleccion-2.png)
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)      
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)      

@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 3
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 04`](../Readme.md) > Ejemplo 3
 
 ## Ejemplo 3: 	Importando datos a una tabla en formato CSV
 
@@ -26,7 +26,7 @@
    ...
    ``` 
 
-   Para que sea un archivo CSV válido, éste debe incluir una línea llamada encabezado que indique el nombre de cada uno de los campos y además cada campo debe separarse por una coma (CSV, significa Comma Separated Value). Por lo tanto, necesitamos hacer una *limpieza de datos*.
+   Para que sea un archivo CSV válido, éste debe incluir una línea llamada encabezado que indique el nombre de cada uno de los campos y además cada campo debe separarse por una coma (CSV, significa Comma Separated Value). Por lo tanto, necesitamos hacer una [*limpieza de datos*](https://es.wikipedia.org/wiki/Limpieza_de_datos).
 
    Abre un editor de texto el archivo `users.dat` y agrega la siguiente línea al inicio:
 
@@ -108,4 +108,4 @@
    INSERT INTO users (id,genero,edad,ocup,cp) VALUES (7000,'F',25,20,'03100');   
    ```
 
-[`Anterior`](../Readme.md#importando-datos-a-una-tabla-en-formato-csv) | [`Siguiente`](../Reto-02/Readme.md)      
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-02/Readme.md)      

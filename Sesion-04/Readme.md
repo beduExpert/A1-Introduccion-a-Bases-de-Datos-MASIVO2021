@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 04`
+[`Introducción a Bases de Datos`](../README.md) > `Sesión 04`
 
 ## Sesión 4: Configuración de Bases de Datos Locales
 
@@ -50,7 +50,7 @@ Para crear una tabla se usa el comando (en su forma simple):
 ##### <ins>Importando datos a una tabla en formato CSV</ins>
 <img src="imagenes/imagen3.jpg" align="right" height="200" width="300">
 
-Para cargar datos en una tabla o base de datos completa es usar que se deban utilizar archivos como lo son *CSV* o *JSON*. *CSV* es uno de los más utilizados y admitidos por __MySQL Workbench__.
+Para cargar datos en una tabla o base de datos completa es usual que se deban utilizar archivos como lo son *CSV* o *JSON*. *CSV* es uno de los más utilizados y admitidos por __MySQL Workbench__.
 
 Un archivo *CSV* se conforma de un encabezado que indica el nombre de las columnas separado por comas y cada uno de los registros, separando el valor para cada campo por comas. 
 
@@ -117,7 +117,7 @@ Al igual que en __MySQL__ es posible cargar los datos usando formatos de interca
 ##### <ins>Realizando operaciones con Documentos</ins>
 <img src="imagenes/imagen7.jpg" align="right" height="200" width="300">
 
-Una vez creada una colección, ya sea mediante la carga masiva de datos o de forma vacía. Es posible modificar los documento que se almacenan ahí. Es posible:
+Una vez creada una colección, ya sea mediante la carga masiva de datos o de forma vacía. Es posible modificar los documentos que se almacenan ahí. Es posible:
 
 1. Agregar documentos
 1. Editar documentos

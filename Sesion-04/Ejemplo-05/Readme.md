@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 5
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 04`](../Readme.md) > Ejemplo 5
 ## Ejemplo 5: Operaciones con bases de datos
 
 ### 1. Objetivos :dart:
@@ -29,7 +29,7 @@
 
    ![Creando base de datos](imagenes/creando-basededatos.png)
 
-   Una vez llenado los datos, presionar el botón __CREATE DATABASE__
+   Una vez llenados los campos, presionar el botón __CREATE DATABASE__
 
    Se deberá ver nuestra nueva base de datos en la lista:
 
@@ -41,4 +41,4 @@
 
    Se trabajará con Colecciones en el siguiente ejemplo.
 
-[`Anterior`](../Readme.md#operaciones-con-bases-de-datos-1) | [`Siguiente`](../Readme.md#realizando-operaciones-con-colecciones-e-importando-datos)      
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)      

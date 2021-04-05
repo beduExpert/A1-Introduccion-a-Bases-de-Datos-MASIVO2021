@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Reto 3
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 04`](../Readme.md) > Reto 3
 
 ## Reto 3: Realizando operaciones con Colecciones e importando datos
 
@@ -37,4 +37,4 @@ Se deberá de crear colecciones e importar los datos de los archivos `movies.csv
    Validar que cada campo tenga nombre y que estén todos los campos, además valida la cantidad de documentos, que en este caso debería de ser 1000209 documentos.
 
 
-[`Anterior`](../Ejemplo-06/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+[`Anterior`](../Ejemplo-06/Readme.md) | [`Siguiente`](../Readme.md)
