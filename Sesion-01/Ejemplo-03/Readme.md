@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Ejemplo 3`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 01`](../Readme.md) > `Ejemplo 3`
 
 ## Ejemplo 3: Estructura básica de una consulta
 
@@ -89,6 +89,6 @@
 
    ![imagen](imagenes/s1we37.png)
 
-[`Anterior`](../Readme.md#estructura-de-una-consulta) | [`Siguiente`](../Reto-02/Readme.md)
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-02/Readme.md)
 
 </div>   

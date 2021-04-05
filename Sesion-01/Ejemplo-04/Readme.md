@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Ejemplo 4`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 01`](../Readme.md) > `Ejemplo 4`
 
 ## Ejemplo 4: Ordenamientos y límites
 
@@ -50,6 +50,6 @@
  
    ![imagen](imagenes/s1we43.png)
 
-[`Anterior`](../Readme.md#ordenamientos-y-límites) | [`Siguiente`](../Reto-03/Readme.md)
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-03/Readme.md)
 
 </div>

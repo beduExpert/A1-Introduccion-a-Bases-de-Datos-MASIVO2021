@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Reto 3`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 01`](../Readme.md) > `Reto 3`
 	
 ## Reto 3: Ordenamientos y Límites
 
@@ -6,7 +6,7 @@
 
 ### 1. Objetivos :dart:
 
-- Escribir consultas que permitan responder a algunas preguntas mediante ordenamientos y límites.
+- Escribir consultas que permitan responder algunas preguntas mediante ordenamientos y límites.
 
 ### 2. Requisitos :clipboard:
 
@@ -16,6 +16,22 @@
 
 Usando la base de datos `tienda`, escribe una consulta que permita obtener el top 5 de puestos por salarios.
 
-[`Anterior`](../Ejemplo-04/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+<details><summary>Solución</summary>
+<p>
+
+Para contestar a esta pregunta, basta con ordenar los puestos por salario en orden descendente y limitar el número de registros a 5.
+
+   ```sql
+   SELECT *
+   FROM puesto
+   ORDER BY salario DESC
+   LIMIT 5;
+   ```
+</p>
+</details> 
+
+<br/>
+
+[`Anterior`](../Ejemplo-04/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>

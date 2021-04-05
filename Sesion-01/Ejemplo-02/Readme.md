@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Ejemplo 02`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 01`](../Readme.md) > `Ejemplo 02`
 
 ## Ejemplo 2: Estructura de una tabla
 
@@ -6,7 +6,7 @@
 
 ### 1. Objetivos :dart:
 
-- Listar las bases de datos (esquemas) en un servidor de bases de datos y a conectarse a las mismas.
+- Listar las bases de datos (esquemas) en un servidor de bases de datos y conectarse a las mismas.
 - Listar las tablas dentro de un esquema.
 - Usar la instrucción `DESCRIBE` para mostrar la estructura de una tabla y los tipos de datos de sus campos.
 
@@ -27,7 +27,7 @@
    SHOW DATABASES;
    ```
    
-   Para ejecutarlo, usa `Ctrl+Enter` o da clic sobre el ícono del rayito. :zap:, de esta forma ejecutaremos todos los comentos. 
+   Para ejecutarlo, usa `Ctrl+Enter` o da clic sobre el ícono del rayito. :zap:, de esta forma ejecutaremos todos los comandos. 
 
    En este caso, se mostrarán las siguientes bases:
    
@@ -63,6 +63,6 @@
 
    La instrucción `DESCRIBE` es tu amiga. La usaremos cada que necesitamos consultar los registros de una tabla, pues nos permitirá saber qué campos tiene y su tipo.
 
-[`Anterior`](../Readme.md#estructura-de-una-tabla) | [`Siguiente`](../Reto-01/Readme.md)
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-01/Readme.md)
 
 <div style="text-align: justify;">

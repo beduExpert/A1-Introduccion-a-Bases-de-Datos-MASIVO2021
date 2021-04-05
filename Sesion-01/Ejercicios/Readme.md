@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Ejercicios`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 01`](../Readme.md) > `Ejercicios`
 	
 ## Ejercicios Sesión 1
 
@@ -76,7 +76,18 @@ Todas las consultas que realices deberás mantenerlas dentro del editor de texto
 
 **¡¡¡MUCHA SUERTE!!!**
 
+<details><summary>Solución</summary>
+<br/>
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)
+[**Revisa el script con las soluciones**](solucion.sql)
+
+<p>
+
+</p>
+</details> 
+
+<br/>
+
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>
