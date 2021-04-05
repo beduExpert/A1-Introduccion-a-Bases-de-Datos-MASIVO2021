@@ -23,7 +23,7 @@ Para relacionar tablas se incluyen los *joins* que son operadores entre tablas, 
 1. `LEFT OUTER JOIN`
 1. `RIGHT OUTER JOIN`
 
-> *Explicar el concepto de join y las diferencias entre cada una de sus variantes. Se sugiere <ins>ampliamente</ins> el uso del pizarrón para ejemplificar los resultados después de aplicar estas operaciones.*
+> *Explicar el concepto de join y las diferencias entre cada una de sus variantes. Se sugiere <ins>ampliamente</ins> el uso de algún pizarrón virtual para ejemplificar los resultados después de aplicar estas operaciones, por ejemplo [Google Jamboard](https://jamboard.google.com/).*
 
 - [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)	
