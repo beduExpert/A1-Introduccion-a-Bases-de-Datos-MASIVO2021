@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 7
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 04`](../Readme.md) > Ejemplo 7
 
 ## Ejemplo 7: Realizando operaciones con Documentos
 

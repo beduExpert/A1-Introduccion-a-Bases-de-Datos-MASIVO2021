@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 2
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 04`](../Readme.md) > Ejemplo 2
 
 ## Ejemplo 2: Realizando operaciones con tablas
 
@@ -31,7 +31,7 @@
    ...
    ```
 
-   Y luego se revisa la documentación, dentro del archivo `README`, igual abriendolo con un editor de textos.
+   Y luego se revisa la documentación, dentro del archivo `README`, igual abriéndolo con un editor de textos.
 
    ```
    USERS FILE DESCRIPTION
@@ -87,7 +87,7 @@
 
    ![imagen](imagenes/s7e21.png)
 
-   Recuerda que cada instrucción en __SQL__ termina siempre con punto y coma.s
+   Recuerda que cada instrucción en __SQL__ termina siempre con punto y coma.
 
    **Sugerencia.**  Cuando el comando `CREATE TABLE` sea usado con *scripts* para automatizar tareas, se sugiere usar la siguiente variante:
 
@@ -99,11 +99,11 @@
 
 1. Otra operación a realizar es el de eliminar una tabla, eso se hace con el comando `DROP TABLE nombre`.
 
+   Así que para eliminar la tabla `users` se ejecuta el comando:
+
    ```sql
    DROP TABLE users;
    ```
-
-   Así que para eliminar la tabla `users` se ejecuta el comando:
 
    ![imagen](imagenes/s7e22.png)
    
@@ -117,7 +117,11 @@
 
    Si deseas, puedes validar que la tabla ya no exista con el comando `SHOW TABLES`.
 
-1. Finalmente se crea nuevamente la tabla `users` y se valida que exista.
+   ```sql
+   SHOW TABLES;
+   ```
+
+1. Finalmente se crea nuevamente la tabla `users` y se valida que no exista.
 
    ```sql
    CREATE TABLE IF NOT EXISTS users (
@@ -131,4 +135,4 @@
 
    ![image](imagenes/s7e23.png)
 
-[`Anterior`](../Readme.md#relacionado-operaciones-con-tablas) | [`Siguiente`](../Reto-01/Readme.md)   
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-01/Readme.md)   

@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 04`
+[`Introducción a Bases de Datos`](../README.md) > `Sesión 04`
 
 ## Sesión 4: Configuración de Bases de Datos Locales
 
@@ -11,6 +11,12 @@
 - Configurar una base de datos de __MongoDB__ en la nube.
 
 ### 2. Contenido :blue_book:
+
+---
+
+> :warning: *__ATENCIÓN EXPERTA(O):__ En esta sesión los alumnos deben tener un servidor de __MySQL__ previamente instalado en sus equipos. Se sugiere recordar a los alumnos la revisión del Prework con las instrucciones de configuración, pues de lo contrario no podrán seguir la clase.*
+
+--- 
 
 #### Parte I: Configuración de Bases Relacionales
 
@@ -45,7 +51,7 @@ Para crear una tabla se usa el comando (en su forma simple):
    );
 ```
 
-> *Mostrar ejemplos de creación de tablas con llaves y los distintos tipos de datos de __MySQL__.*
+> *Mostrar ejemplos de creación de tablas con llaves y los distintos tipos de datos de __MySQL__. Si da tiempo profundizar en el uso de llaves foráneas.*
 
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)
@@ -54,11 +60,11 @@ Para crear una tabla se usa el comando (en su forma simple):
 ##### <ins>Importando datos a una tabla en formato CSV</ins>
 <img src="imagenes/imagen3.jpg" align="right" height="200" width="300">
 
-Para cargar datos en una tabla o base de datos completa es usar que se deban utilizar archivos como lo son *CSV* o *JSON*. *CSV* es uno de los más utilizados y admitidos por __MySQL Workbench__.
+Para cargar datos en una tabla o base de datos completa es usual que se deban utilizar archivos como lo son *CSV* o *JSON*. *CSV* es uno de los más utilizados y admitidos por __MySQL Workbench__.
 
 Un archivo *CSV* se conforma de un encabezado que indica el nombre de las columnas separado por comas y cada uno de los registros, separando el valor para cada campo por comas. 
 
-> *Mostrar algún archivo CSV y explicar cada una de sus partes.*
+> *Mostrar algún archivo CSV y otro JSON y explicar cada una de sus partes.*
 
 - [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
 - [**`RETO 2`**](Reto-02/Readme.md)
@@ -86,6 +92,8 @@ Registro -> Documento
 Columna -> Llave
 ```
 
+> *Platicar un poco sobre los principales beneficios de usar estas bases de datos. Se profundiza más en esto en la Sesión 4, pero puede servir para ir preparando a los alumnos.*
+
 ---
 
 
@@ -97,6 +105,8 @@ Para facilitar la creación de servidores de bases de datos (llamados *clusters*
 Esta plataforma, llamada __Atlas__ permite crear un *cluster* de forma gratuita por lo que lo usaremos para ejemplificar este proceso. Puedes utilizarlo también para tu proyecto.
 
 > *Explicar el concepto de base de datos en la nube y su principal diferencia con una base de datos local. Mostrar similudes con el servicio AWS de Amazon.*
+
+> **Importante:** *Quizá aquí sea un buen momento para mencionar ventajas de tener los datos en una base sobre manejar todo directamente en archivos CSV. Esto con miras a que en su proyecto incluyan una base de datos y no simplemente lean un CSV.*
 
 - [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
 
@@ -127,7 +137,7 @@ Al igual que en __MySQL__ es posible cargar los datos usando formatos de interca
 ##### <ins>Realizando operaciones con Documentos</ins>
 <img src="imagenes/imagen7.jpg" align="right" height="200" width="300">
 
-Una vez creada una colección, ya sea mediante la carga masiva de datos o de forma vacía. Es posible modificar los documento que se almacenan ahí. Es posible:
+Una vez creada una colección, ya sea mediante la carga masiva de datos o de forma vacía. Es posible modificar los documentos que se almacenan ahí. Es posible:
 
 1. Agregar documentos
 1. Editar documentos

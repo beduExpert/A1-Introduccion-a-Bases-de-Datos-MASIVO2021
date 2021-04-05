@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 6
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 04`](../Readme.md) > Ejemplo 6
 
 ## Ejemplo 6: Realizando operaciones con Colecciones e importando datos
 
@@ -47,4 +47,4 @@ A diferencia de SQL, las Colecciones sólo se crean y no es necesario definir ca
    Otro forma de comprobar la correcta importación es la cantidad de documentos, y se observa que hay 6040 documentos (o registros) en la colección, lo que indica que todo está en orden.
 
 
-[`Anterior`](../Readme.md#realizando-operaciones-con-colecciones-e-importando-datos) | [`Siguiente`](../Reto-03/Readme.md)      
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-03/Readme.md)      

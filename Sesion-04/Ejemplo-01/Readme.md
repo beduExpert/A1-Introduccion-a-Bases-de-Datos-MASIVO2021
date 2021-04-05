@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 1
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 04`](../Readme.md) > Ejemplo 1
 
 ## Ejemplo 1: Operaciones con bases de datos
 
@@ -12,6 +12,12 @@
 - Servidor de __MySQL__ instalado y ejecutándose.
 
 ### 3. Desarrollo :rocket:
+
+---
+
+> :warning: **Importante:** Para realizar todas las actividades, debes haber configurado un servidor de **MySQL** en tu equipo. De lo contrario no podrás seguir la sesión. Revisa el Prework de esta sesión.
+
+---
 
 1. Conectate a tu base de datos desde __MySQL Workbench__ con las credenciales correspondientes a la configuración de tu servidor.
 
@@ -43,8 +49,16 @@
 
 1. Como paso final, se creará nuevamente la base de datos y se hará uso de ella como la base de datos actual, para ello se usará el comando `USE Nombre`
 
+   ```sql
+   CREATE DATABASE IF NOT EXISTS MiNombre;
+   ```
+
    ![imagen](imagenes/s7e13.png)
 
-[`Anterior`](../Readme.md#operaciones-con-bases-de-datos) | [`Siguiente`](../Readme.md#realizando-operaciones-con-tablas)      
+   ```sql
+   USE MiNombre;
+   ```
+
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)      
 
 </div>

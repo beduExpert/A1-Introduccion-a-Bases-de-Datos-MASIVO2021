@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > Ejemplo 4
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 05`](../Readme.md) > Ejemplo 1
 
 ## Ejemplo 4: Configuración de __MongoDB__ en la nube
 
@@ -15,6 +15,12 @@
 
    ![Registro en MongoDB atlas](imagenes/registro-mongodb-atlas.png)
 
+1. Llenamos el formulario con la información necesaria.
+
+   ![Formulario](imagenes/2form.png)
+
+1. En la siguiente ventana damos clic en la opción __skip__ al final.
+    ![conf](imagenes/3lenguaje.png)
 1. Elegir el tipo de __Cluster__, en donde se seleccionará __Starter Clusters__ que es el que es libre de costo, dar clic en el botón __Create a Cluster__.
 
    ![Seleccionando cluster](imagenes/seleccionando-cluster.png)
@@ -31,7 +37,7 @@
 
    ![Cluster creado](imagenes/creando-cluster-02.png)
 
-1. Lo que sigue es iniciar una conexión al cluster de MongoDB en la nube, esto se realiza dando clic en el botón __CONNECT__
+1. Lo que sigue es una conexión al cluster de MongoDB en la nube, esto se realiza dando clic en el botón __CONNECT__
 
   ![Conectando al servidor MongoDB](imagenes/conectando-a-mongodb.png)
   
@@ -45,10 +51,10 @@
 
   Introduce los datos que desees para ingresar a tu base de datos, por ejemplo:
 
-  - Usuario: introabd
-  - Password: introabd1234
+   - Usuario: introabd
+   - Password: introabd1234
 
-  **Recuerda el vídeo de contraseñas seguras `introabd1234` no es una contraseña muy segura que digamos...**
+   **Recuerda el vídeo de contraseñas seguras `introabd1234` no es una contraseña muy segura que digamos...**
 
   ![Creando usuario](imagenes/creando-usuario.png)
   
@@ -84,4 +90,4 @@
    
    En este punto ya __Compass__ ya estará conectado al __Cluster0__ que como se puede ver en la columna izquierda consta de 3 instancias de MongoDB corriendo en paralelo lo que se puede escalar según las necesidades.
 
-[`Anterior`](../Readme.md#configuración-de-mongodb-en-la-nube) | [`Siguiente`](../Readme.md#operaciones-con-bases-de-datos-1)   
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)   
