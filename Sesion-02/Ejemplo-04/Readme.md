@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 4`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 4`
 
 ## Ejemplo 4: Subconsultas
 
@@ -16,7 +16,7 @@
 
 1. Abre MySQL Wokbench y conectate a la base de datos del curso.
 
-2. Una subconsulta es una consulta dentro de otra. Puede crear sunconsultas en SQL y pueden aparecer en la cláusula `WHERE`, `FROM` o `SELECT`. Veamos algunos ejemplos.
+2. Una subconsulta es una consulta dentro de otra. Éstas pueden aparecer en la cláusula `WHERE`, `FROM` o `SELECT`. Veamos algunos ejemplos.
 
    *Usando `WHERE`*
    
@@ -81,6 +81,6 @@
 
    ![imagen](imagenes/s2we45.png)
 
-[`Anterior`](../Readme.md#subconsultas) | [`Siguiente`](../Reto-04/Readme.md)            
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-04/Readme.md)            
 
 </div>

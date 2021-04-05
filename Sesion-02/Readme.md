@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 2`
+[`Introducción a Bases de Datos`](../README.md) > `Sesión 2`
 
 ## Sesión 2: Agrupaciones y subconsultas
 
@@ -72,7 +72,7 @@ Una subconsulta es una consulta que se encuentra dentro de otra. Estas subconsul
 
 ### 3. Ejercicios para practicar :hammer:
 
-Aplica lo todo lo que aprendiste durante la sesión en esta serie de ejercicios.
+Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
 
 - [**`EJERCICIOS SESIÓN 2`**](Ejercicios/Readme.md)
 

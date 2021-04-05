@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 2`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 2`
 
 ## Ejemplo 2: Funciones de agrupamiento
 
@@ -73,6 +73,6 @@
 
    ![imagen](imagenes/s2we26.png)
 
-[`Anterior`](../Readme.md#funciones-de-agrupamiento) | [`Siguiente`](../Reto-02/Readme.md)      
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-02/Readme.md)      
 
 </div>

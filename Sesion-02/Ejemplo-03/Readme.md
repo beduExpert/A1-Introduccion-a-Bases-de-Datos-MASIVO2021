@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 3`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 3`
 
 ## Ejemplo 3: Agrupamientos
 
@@ -51,6 +51,6 @@
 
    ![imagen](imagenes/s2we33.png)
 
-[`Anterior`](../Readme.md#agrupamientos) | [`Siguiente`](../Reto-03/Readme.md)         
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-03/Readme.md)         
 
 </div>   

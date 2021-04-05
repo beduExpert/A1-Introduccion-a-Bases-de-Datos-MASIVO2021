@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 1`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 02`](../Readme.md) > `Reto 1`
 	
 ## Reto 1: Agrupamientos y subconsultas
 
@@ -6,7 +6,7 @@
 
 ### 1. Objetivos :dart:
 
-- Escribir consultas que permitan responder a algunas preguntas.
+- Escribir consultas que permitan responder algunas preguntas.
 
 ### 2. Requisitos :clipboard:
 
@@ -20,8 +20,9 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 - ¿Qué artículos incluyen la palabra `Cannelloni` en su nombre?
 - ¿Qué nombres están separados por un guión (`-`) por ejemplo `Puree - Kiwi`?
 
+<br/>
 
-[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#funciones-de-agrupamiento)   
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md)   
 
 
 </div>

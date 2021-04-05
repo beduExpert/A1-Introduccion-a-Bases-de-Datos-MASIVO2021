@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 2`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 02`](../Readme.md) > `Reto 2`
 	
 ## Reto 2: Funciones de agrupamiento
 
@@ -21,6 +21,8 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 - ¿Cuál es el salario mínimo y máximo?
 - ¿Cuál es la suma del salario de los últimos cinco puestos agregados?
 
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#agrupamientos)      
+<br/>
+
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md)      
 
 </div> 
