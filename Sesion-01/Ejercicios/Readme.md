@@ -76,16 +76,6 @@ Todas las consultas que realices deberás mantenerlas dentro del editor de texto
 
 **¡¡¡MUCHA SUERTE!!!**
 
-<details><summary>Solución</summary>
-<br/>
-
-[**Revisa el script con las soluciones**](solucion.sql)
-
-<p>
-
-</p>
-</details> 
-
 <br/>
 
 [`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)
