@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Reto 1`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 03`](../Readme.md) > `Reto 1`
 	
 ## Reto 1: Agrupamientos y subconsultas
 
@@ -20,6 +20,8 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 - ¿Cuál es el nombre de los artículos que se han vendido?
 - ¿Cuál es el total de cada venta?
 
-[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#definición-de-vistas)
+<br/>
+
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>

@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Ejercicios`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 03`](../Readme.md) > `Ejercicios`
 	
 ## Ejercicios Sesión 3
 
@@ -44,6 +44,7 @@ Todas las consultas que realices deberás mantenerlas dentro del editor de texto
 
 **¡¡¡MUCHA SUERTE!!!**
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)
+
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>

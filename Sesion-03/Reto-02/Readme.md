@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Reto 2`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 03`](../Readme.md) > `Reto 2`
 	
 ## Reto 2: Definición de vistas
 
@@ -22,7 +22,7 @@
 
 _Para este reto necesitarás un identificador único. Tu identificador serán los últimos tres dígitos de tu número de celular. Por ejemplo, si tu número es: 5512345678 tu identificador debe ser 678. <ins>¡No lo olvides!</ins>_   
 
-_**Te pedimos esto para que todos puedan realizar los ejemplos.**_
+_**Te pedimos esto para que todos puedan realizar los ejemplos y retos.**_
 
 
 _Si no sigues las instruciones..._   
@@ -37,6 +37,8 @@ Usando la base de datos `tienda`, define las siguientes vistas que permitan obte
 - Saber qué artículos ha vendido cada empleado.
 - Saber qué puesto ha tenido más ventas.
 
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+<br/>
+
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>
