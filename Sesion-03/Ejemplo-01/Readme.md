@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Ejemplo 1`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 03`](../Readme.md) > `Ejemplo 1`
 
 ## Ejemplo 1: Clasificación de Joins
 
@@ -68,6 +68,6 @@
    
    ![imagen](imagenes/s3we14.png)
 
-[`Anterior`](../Readme.md#clasificación-de-joins) | [`Siguiente`](../Reto-01/Readme.md)
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-01/Readme.md)
 
 </div>

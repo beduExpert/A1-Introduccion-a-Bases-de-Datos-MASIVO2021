@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 3`
+[`Introducción a Bases de Datos`](../README.md) > `Sesión 3`
 
 ## Sesión 3: Joins y Vistas
 
@@ -33,7 +33,7 @@ Para relacionar tablas se incluyen los *joins* que son operadores entre tablas, 
 #### <ins>Definición de vistas</ins>
 <img src="imagenes/imagen2.png" align="right" height="300" width="300"> 
 
-Una vista es una tabla *virtual* que almacena los resultados de una consulta. Son útiles cuando las consultas son demasiado complejas y su proceso puede tomar varios minutos en ejecutarse. De esta forma, se consultan directamente los resultados de la consulta como si se tratara de cualquier tabla.
+Una vista es una tabla *virtual* que almacena los resultados de una consulta. Son útiles cuando las consultas son demasiado complejas y su proceso puede tomar varios minutos en ejecutarse. De esta forma, se revisan directamente los resultados de la consulta como si se tratara de cualquier tabla.
 
 Para crear una vista se usa:
 

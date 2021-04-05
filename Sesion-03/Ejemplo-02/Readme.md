@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Ejemplo 2`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 03`](../Readme.md) > `Ejemplo 2`
 
 ## Ejemplo 2: Definición de vistas
 
@@ -32,9 +32,9 @@ _Si no sigues las instruciones..._
 
 1. Abre MySQL Wokbench y conectate a la base de datos tienda `tienda`.
 
-2. Una vista permite preservar los resultados obtenidos mediante una consulta. Esto es útil pues no se tienen que estar reescribiendo relaciones, agrupando resultado, ordenando los registros, etc. La vista se almacena en memoria como si fuera una tabla cualquiera. 
+2. Una vista permite preservar los resultados obtenidos mediante una consulta. Esto es útil pues no se tienen que estar reescribiendo relaciones, agrupando resultados, ordenando los registros, etc. La vista se almacena en memoria como si fuera una tabla cualquiera. 
 
-   Por ejemplo, la tabla que almacena las ventas, puede relacionarse con los empleados y los artículo. Podemos crear una vista que almacene esta relación como si fuera un *ticket*.
+   Por ejemplo, la tabla que almacena las ventas, puede relacionarse con los empleados y los artículos. Podemos crear una vista que almacene esta relación como si fuera un *ticket*.
    
    Lo primero será, definir la consulta.
 
@@ -78,6 +78,6 @@ _Si no sigues las instruciones..._
    
    ![imagen](imagenes/s3we23.png)
 
-[`Anterior`](../Readme.md#definición-de-vistas) | [`Siguiente`](../Reto-02/Readme.md)
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-02/Readme.md)
 
 </div>   
