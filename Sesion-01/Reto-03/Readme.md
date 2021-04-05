@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Reto 3`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 01`](../Readme.md) > `Reto 3`
 	
 ## Reto 3: Ordenamientos y Límites
 
@@ -6,7 +6,7 @@
 
 ### 1. Objetivos :dart:
 
-- Escribir consultas que permitan responder a algunas preguntas mediante ordenamientos y límites.
+- Escribir consultas que permitan responder algunas preguntas mediante ordenamientos y límites.
 
 ### 2. Requisitos :clipboard:
 
@@ -32,6 +32,6 @@ Para contestar a esta pregunta, basta con ordenar los puestos por salario en ord
 
 <br/>
 
-[`Anterior`](../Ejemplo-04/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+[`Anterior`](../Ejemplo-04/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>

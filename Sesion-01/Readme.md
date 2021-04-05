@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 1`
+[`Introducción a Bases de Datos`](../README.md) > `Sesión 1`
 
 ## Sesión 1: Fundamentos de SQL
 
@@ -31,7 +31,7 @@ La información de una base de datos se encuentra alojada en un servidor, por lo
 #### <ins>Estructura de una tabla</ins>
 <img src="imagenes/imagen2.png" align="right" height="200" width="300"> 
 
-Una vez que hemos accedido a un servidor de bases de datos, nos encontramos con un listado de distintas bases, donde cada una contiene *tablas*. Una tabla se compone de:
+Una vez que hemos accedido a un servidor de bases de datos, nos encontramos con un listado de las distintas bases de datos, cada base contiene *tablas*. Una tabla se compone de:
 
 1. Renglones
 1. Columnas
@@ -41,7 +41,7 @@ Una vez que hemos accedido a un servidor de bases de datos, nos encontramos con 
 
 Dichas tablas pueden estar relacionadas o no.
 
-> *Explicar cada uno de los elementos que conforman a una tabla haciendo especial énfasis en el uso de llaves y tipos de datos.*
+> *Explicar cada uno de los elementos que conforman a una tabla haciendo especial énfasis en el uso de llaves (primarias y foráneas) y tipos de datos.*
 
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)
@@ -57,7 +57,7 @@ En su forma más básica una consulta se compone de:
 1. Una cláusula `FROM` que indica de dónde obtener los datos.
 1. Una cláusula `WHERE` que representa los filtros que podemos aplicarle a los datos.
 
-> *Ejemplificar la estructura de una consulta sencilla y explicar estras tres partes con detalle. Se sugiere dibujar un diagrama el el pizarrón.*
+> *Ejemplificar la estructura de una consulta sencilla y explicar estas tres partes con detalle. Se sugiere dibujar un diagrama en el pizarrón.*
 
 - [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
 - [**`RETO 2`**](Reto-02/Readme.md)

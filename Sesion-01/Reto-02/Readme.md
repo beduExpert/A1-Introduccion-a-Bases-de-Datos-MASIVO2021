@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 01`](../Readme.md) > `Reto 2`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 01`](../Readme.md) > `Reto 2`
 	
 ## Reto 2: Estructura básica de una consulta
 
@@ -67,6 +67,6 @@ Usando la base de datos `cursos`, escribe consultas que permitan responder las s
 
 <br/>
 
-[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#ordenamientos-y-límites)
+[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>
