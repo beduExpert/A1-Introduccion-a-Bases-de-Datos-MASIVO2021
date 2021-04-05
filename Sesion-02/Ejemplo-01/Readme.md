@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 1`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 02`](../Readme.md) > `Ejemplo 1`
 
 ## Ejemplo 1: Selecciones con `LIKE`
 
@@ -58,6 +58,6 @@
 
    ![imagen](imagenes/s2we14.png)
 
-[`Anterior`](../Readme.md#búsqueda-de-patrones-mediante-like) | [`Siguiente`](../Reto-01/Readme.md)   
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-01/Readme.md)   
 
 </div>   

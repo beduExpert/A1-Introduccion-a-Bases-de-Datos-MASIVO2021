@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 2`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 02`](../Readme.md) > `Reto 2`
 	
 ## Reto 2: Funciones de agrupamiento
 
@@ -74,6 +74,6 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 <br/>
 
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#agrupamientos)      
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md)      
 
 </div> 

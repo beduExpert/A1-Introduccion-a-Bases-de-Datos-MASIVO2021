@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 4`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 02`](../Readme.md) > `Reto 4`
 	
 ## Reto 4: Subconsultas
 
@@ -61,6 +61,6 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 <br/>
 
-[`Anterior`](../Ejemplo-04/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)            
+[`Anterior`](../Ejemplo-04/Readme.md) | [`Siguiente`](../Readme.md)            
 
 </div>

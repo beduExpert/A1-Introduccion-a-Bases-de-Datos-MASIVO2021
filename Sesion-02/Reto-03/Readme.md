@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 02`](../Readme.md) > `Reto 3`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 02`](../Readme.md) > `Reto 3`
 	
 ## Reto 3: Agrupamientos
 
@@ -6,7 +6,7 @@
 
 ### 1. Objetivos :dart:
 
-- Escribir consultas que permitan responder a algunas preguntas.
+- Escribir consultas que permitan responder algunas preguntas.
 
 ### 2. Requisitos :clipboard:
 
@@ -66,6 +66,6 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 <br/>
 
-[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#subconsultas)         
+[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md)         
 
 </div>
