@@ -14,7 +14,7 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Abre MySQL Wokbench y conectate a la base de datos del curso.
+1. Abre MySQL Wokbench y conéctate a la base de datos del curso.
 
 2. Ahora revisaremos el concepto de agrupamiento. Para hacer un agrupamiento se usa la cláusula `GROUP BY` que recolecta datos de múltiples registros y los agrupa en una o más columnas. Veamos algunos ejemplos.
 

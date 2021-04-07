@@ -92,7 +92,7 @@ Registro -> Documento
 Columna -> Llave
 ```
 
-> *Platicar un poco sobre los principales beneficios de usar estas bases de datos. Se profundiza más en esto en la Sesión 4, pero puede servir para ir preparando a los alumnos.*
+> *Platicar un poco sobre los principales beneficios de usar estas bases de datos. Se profundiza más en esto en la sesión 5, pero puede servir para ir preparando a los alumnos.*
 
 ---
 
@@ -104,9 +104,9 @@ Para facilitar la creación de servidores de bases de datos (llamados *clusters*
 
 Esta plataforma, llamada __Atlas__ permite crear un *cluster* de forma gratuita por lo que lo usaremos para ejemplificar este proceso. Puedes utilizarlo también para tu proyecto.
 
-> *Explicar el concepto de base de datos en la nube y su principal diferencia con una base de datos local. Mostrar similudes con el servicio AWS de Amazon.*
+> *Explicar el concepto de base de datos en la nube y su principal diferencia con una base de datos local. Mostrar similitudes con el servicio AWS de Amazon.*
 
-> **Importante:** *Quizá aquí sea un buen momento para mencionar ventajas de tener los datos en una base sobre manejar todo directamente en archivos CSV. Esto con miras a que en su proyecto incluyan una base de datos y no simplemente lean un CSV.*
+> **Importante:** *Quizá aquí sea un buen momento para mencionar ventajas de tener los datos en una base y no manejar todo directamente en archivos CSV. Esto con miras a que en su proyecto incluyan una base de datos y no simplemente lean un CSV.*
 
 - [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
 
@@ -114,7 +114,7 @@ Esta plataforma, llamada __Atlas__ permite crear un *cluster* de forma gratuita 
 ##### <ins>Operaciones con bases de datos</ins>
 <img src="imagenes/imagen5.png" align="right" height="200" width="300">
 
-Una vez configurado el *cluster* a partir de __MongoDB Atlas__, podemos conectar a la misma a través de __MongoDB Compass__ y por lo tanto podremos crear bases de datos desde aquí.
+Una vez configurado el *cluster* a partir de __MongoDB Atlas__, podemos conectarnos a través de __MongoDB Compass__ y por lo tanto podremos crear bases de datos desde aquí.
 
 Lo único que solicita __MongoDB Compass__, a través de una interfaz gráfica, es el nombre de la base de datos.
 

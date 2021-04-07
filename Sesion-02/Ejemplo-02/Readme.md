@@ -14,7 +14,7 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Abre MySQL Wokbench y conectate a la base de datos del curso.
+1. Abre MySQL Wokbench y conéctate a la base de datos del curso.
 
 2. Ahora revisaremos algunas de las principales funciones de agrupamiento existentes en MySQL. Nos enfocaremos en funciones aritméticas pues son las más usadas, sin embargo, si estás interesado en conocer funciones de otros tipos de datos, te recomendamos que visites esta [liga](https://www.techonthenet.com/mysql/functions/).
 

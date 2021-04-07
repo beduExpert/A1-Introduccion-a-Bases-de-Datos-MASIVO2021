@@ -16,15 +16,15 @@
 
 Todos los ejercicios debes hacerlos usando la base `classicmodels`.
 
-Todas las consultas que realices deberás mantenerlas dentro del editor de textos de MySQL Workbench. Al finalizar, guarda este archivo, llendo al menú `File` > `Save script`.  **Recuerda añadir a todos los nombres te dus vistas el sufijo con tu identificador**.
+Todas las consultas que realices deberás mantenerlas dentro del editor de textos de MySQL Workbench. Al finalizar, guarda este archivo, llendo al menú `File` > `Save script`.  **Recuerda añadir a todos los nombres te tus vistas el sufijo con tu identificador**.
 
 *Para estas consultas usa INNER JOIN*
 
 1. Obtén la cantidad de productos de cada orden.
 
-2. Obten el número de orden, estado y costo total de cada orden.
+2. Obtén el número de orden, estado y costo total de cada orden.
 
-3. Obten el número de orden, fecha de orden, línea de orden, nombre del producto, cantidad ordenada y precio de cada pieza.
+3. Obtén el número de orden, fecha de orden, línea de orden, nombre del producto, cantidad ordenada y precio de cada pieza.
 
 4. Obtén el número de orden, nombre del producto, el precio sugerido de fábrica (msrp) y precio de cada pieza.
 

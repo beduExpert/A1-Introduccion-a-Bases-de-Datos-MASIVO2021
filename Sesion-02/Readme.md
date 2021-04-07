@@ -31,7 +31,7 @@ La *búsqueda de patrones* es una técnica que permite realizar búsquedas media
 La cláusula `LIKE` permite usar comodines en la cláusula `WHERE` de una instrucción `SELECT` y realizar búsqueda de patrones.  
 
 
-> *Describir la sintaxis de LIKE y los comodines existentes. Se recomienda hacerlo de manera visual en el pizarrón.*
+> *Describir la sintaxis de LIKE y los comodines existentes. Se recomienda hacerlo de manera visual en algún pizarrón virtual.*
 
 - [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)	
@@ -64,7 +64,7 @@ COUNT()
 
 La cláusula `GROUP BY` es usada dentro de la instrucción `SELECT` para recolectar datos a partir de varios registros y agruparlos en una o más columnas.
 
-> *Explicar el uso de agrupamientos de bases de datos, quizá mencionar alguno de sus principales usos. Nuevamente se sugiere hacer dibujos en el pizarrón para hacer más claro el resultado (antes del ejemplo).*
+> *Explicar el uso de agrupamientos de bases de datos, quizá mencionar alguno de sus principales usos. Nuevamente se sugiere hacer dibujos en algún pizarrón virtual para hacer más claro el resultado (antes del ejemplo).*
 
 - [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
 - [**`RETO 3`**](Reto-03/Readme.md)	

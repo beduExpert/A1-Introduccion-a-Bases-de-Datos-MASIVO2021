@@ -22,7 +22,7 @@ Comenzaremos con la conexión a una base de datos relacional de __MySQL__. Las c
 
 La información de una base de datos se encuentra alojada en un servidor, por lo general, una computadora de gran potencia. Para conectarnos hacemos uso de un cliente que recibe datos de la base y envía peticiones para cambiar o agregar datos.
 
-> *Explicar el Modelo Cliente-Servidor en pizarrón. Se sugiere usar una analogía con la vida diaria. Ejemplo: El servidor es una casa, para entrar necesitamos una dirección, una llave y un usuario, etc.*
+> *Explicar el Modelo Cliente-Servidor en algún pizarrón virtual. Se sugiere usar una analogía con la vida diaria. Ejemplo: El servidor es una casa, para entrar necesitamos una dirección, una llave y un usuario, etc.*
 
 - [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
 
@@ -57,7 +57,7 @@ En su forma más básica una consulta se compone de:
 1. Una cláusula `FROM` que indica de dónde obtener los datos.
 1. Una cláusula `WHERE` que representa los filtros que podemos aplicarle a los datos.
 
-> *Ejemplificar la estructura de una consulta sencilla y explicar estas tres partes con detalle. Se sugiere dibujar un diagrama en el pizarrón.*
+> *Ejemplificar la estructura de una consulta sencilla y explicar estas tres partes con detalle. Se sugiere dibujar un diagrama en algún pizarrón virtual.*
 
 - [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
 - [**`RETO 2`**](Reto-02/Readme.md)

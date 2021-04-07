@@ -14,7 +14,7 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Abre MySQL Wokbench y conectate a la base de datos del curso.
+1. Abre MySQL Wokbench y conéctate a la base de datos del curso.
 
 > :point_up: **Recuerda:** `USE tienda`
 
