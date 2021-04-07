@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 2`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 05`](../Readme.md) > `Reto 2`
 	
 ## Reto 2: Filtros básicos
 
@@ -14,7 +14,7 @@
 
 ### 3. Desarrollo :rocket:
 
-Usando la base de datos `sample_mflix`, agrega proyeccciones, filtros, ordenamientos y límites que permitan contestar las siguientes preguntas.
+Usando la base de datos `sample_mflix`, agrega proyeccciones, filtros, ordenamientos y límites que permitan contestar las siguientes preguntas:
 
 - ¿Qué comentarios ha hecho Greg Powell?
 - ¿Qué comentarios han hecho Greg Powell o Mercedes Tyler?
@@ -85,6 +85,6 @@ Usando la base de datos `sample_mflix`, agrega proyeccciones, filtros, ordenamie
 
 <br/>
 
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>
