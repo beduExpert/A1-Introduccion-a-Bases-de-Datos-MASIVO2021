@@ -22,7 +22,7 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 <br/>
 
-[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md)   
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#funciones-de-agrupamiento)   
 
 
 </div>

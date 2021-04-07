@@ -30,7 +30,7 @@ _Si no sigues las instruciones..._
 
 ---
 
-1. Abre MySQL Wokbench y conectate a la base de datos tienda `tienda`.
+1. Abre MySQL Wokbench y conéctate a la base de datos tienda `tienda`.
 
 2. Una vista permite preservar los resultados obtenidos mediante una consulta. Esto es útil pues no se tienen que estar reescribiendo relaciones, agrupando resultados, ordenando los registros, etc. La vista se almacena en memoria como si fuera una tabla cualquiera. 
 

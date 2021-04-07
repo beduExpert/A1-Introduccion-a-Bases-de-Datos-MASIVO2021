@@ -96,7 +96,7 @@ Esta plataforma, llamada __Atlas__ permite crear un *cluster* de forma gratuita 
 ##### <ins>Operaciones con bases de datos</ins>
 <img src="imagenes/imagen5.png" align="right" height="200" width="300">
 
-Una vez configurado el *cluster* a partir de __MongoDB Atlas__, podemos conectar a la misma a través de __MongoDB Compass__ y por lo tanto podremos crear bases de datos desde aquí.
+Una vez configurado el *cluster* a partir de __MongoDB Atlas__, podemos conectarnos a través de __MongoDB Compass__ y por lo tanto podremos crear bases de datos desde aquí.
 
 Lo único que solicita __MongoDB Compass__, a través de una interfaz gráfica, es el nombre de la base de datos.
 

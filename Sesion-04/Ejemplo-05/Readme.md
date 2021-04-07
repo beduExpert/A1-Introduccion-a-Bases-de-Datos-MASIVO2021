@@ -17,7 +17,7 @@
 
 1. En el campo que se encuentra activo, introduce el connection string que guardaste del ejemplo pasado.
 
-1. Presiona el botón `Connect` y y si obtienes una pantalla **similar** la que se muestra en la siguiente imagen, la conexión se habrá realizado con éxito.
+1. Presiona el botón `Connect` y si obtienes una pantalla **similar** la que se muestra en la siguiente imagen, la conexión se habrá realizado con éxito.
 
    ![imagen](imagenes/s4e13.png)
 

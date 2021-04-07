@@ -11,7 +11,7 @@
 1. Base de datos __MiNombre__ y Colecciones `users`, `movies` y `ratings` creadas
 
 ### 3. Desarrollo :rocket:
-A continuación se realizaran algunas operaciones de agregar, modificar y eliminar un documento JSON en una Colección.
+A continuación se realizarán algunas operaciones de agregar, modificar y eliminar un documento JSON en una Colección.
 
 1. Agregar los siguientes registros en formato CSV a la Colección `movies`
 

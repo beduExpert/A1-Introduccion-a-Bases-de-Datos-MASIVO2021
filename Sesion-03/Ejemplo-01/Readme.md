@@ -15,7 +15,7 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Abre MySQL Wokbench y conectate a la base de datos `tienda`.
+1. Abre MySQL Wokbench y conéctate a la base de datos `tienda`.
 
 2. Para poder relacionar tablas, necesitamos conocer las *llaves primarias* y *foráneas* presentes en una tabla. Una forma de encontrar esto es usando la primitiva `SHOW KEYS`. Por ejemplo, a continuación se muestran las llaves para la tabla `venta` del esquema `tienda`.
 
@@ -31,7 +31,7 @@
 
    *`JOIN`/`INNER JOIN`*
    
-   Es el tipo de join más común y regresa todos los registros de múltiples tablas donde se cumplan la condición del join (*join codition*). Por ejemplo, podemos relacionar la tabla `empleado` con `puesto`.
+   Es el tipo de join más común y regresa todos los registros de múltiples tablas donde se cumplan la condición del join (*join condition*). Por ejemplo, podemos relacionar la tabla `empleado` con `puesto`.
    
    ```sql
    SELECT *
