@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejercicios`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 05`](../Readme.md) > `Ejercicios`
 	
 ## Ejercicios Sesión 5
 
@@ -16,7 +16,7 @@
 
 Las consultas se realizarán sobre la base `sample_training`.
 
-Todas las consultas que realices deberás mantenerlas dentro del MongoDB Compass. Para hacer esto, da clic en el botón con los puntos `···` y en `Toogle Query History`. Busca la última consulta y agregala a favoritos presionando el íncono con la estrella :star:.
+Todas las consultas que realices deberás mantenerlas dentro del MongoDB Compass. Para hacer esto, da clic en el botón con los puntos `···` y en `Toogle Query History`. Busca la última consulta y agrégala a favoritos presionando el ícono con la estrella :star:.
 
 1. Obtén los datos de contacto de cada compañía.
 
@@ -46,7 +46,9 @@ Todas las consultas que realices deberás mantenerlas dentro del MongoDB Compass
 
 **¡¡¡MUCHA SUERTE!!!**
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)
+<br/>
+
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>
 

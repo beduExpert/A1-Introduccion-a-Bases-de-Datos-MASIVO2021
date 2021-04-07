@@ -27,7 +27,7 @@ Comcencemos la sesión con un pequeño debate. :open_mouth:
    - ¿Qué ventajas tiene usar una base de datos no relacional?
    - ¿Cuál es el mejor tipo de base de datos entonces?
 
-2. Comenta tus respuestas con el grupo.
+2. Comenta tus respuestas con el grupo. 
 
 ---
 #### <ins>Colecciones, Documentos y Proyecciones</ins>

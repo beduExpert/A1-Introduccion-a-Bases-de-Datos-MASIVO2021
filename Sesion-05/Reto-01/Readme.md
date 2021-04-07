@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Reto 1`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 05`](../Readme.md) > `Reto 1`
 	
 ## Reto 1: Colecciones, Documentos y Proyecciones
 
@@ -20,7 +20,8 @@ Usando la base de datos `sample_mflix`, proyecta los datos que se solicitan.
 - Título, elenco y año de cada película.
 - Nombre y contraseña de cada usuario.
 
+<br/>
 
-[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#filtros-básicos)
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>

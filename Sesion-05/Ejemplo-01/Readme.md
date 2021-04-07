@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 1`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 05`](../Readme.md) > `Ejemplo 1`
 
 ## Ejemplo 1: Colecciones, Documentos y Proyecciones
 
@@ -29,20 +29,20 @@
    
    ![imagen](imagenes/s4e22.png)
 
-3. Ahora estás apreciando los documentos que hay dentro de la colección `users`. En el menú que se encuentra sobre los documentos, puedes cambiar el formato en que se muestran, por defecto, la forma de visualizarlos es en formato de lista aunque hay otras opciones como JSON o formato de tabla como en SQL.
+3. Ahora estás apreciando los documentos que hay dentro de la colección `users`. En el menú que se encuentra sobre los documentos, puedes cambiar el formato en que se muestran por defecto, la forma de visualizarlos es en formato de lista aunque hay otras opciones como JSON o formato de tabla como en __SQL__.
 
    ![imagen](imagenes/s4e23.png)
    
-4. Por defecto, la interfaz de MongoDB Compass muestra todos los campos de todos los documentos, esto es equivalente a ejecutar la instrucción de SQL:
+4. Por defecto, la interfaz de __MongoDB Compass__ muestra todos los campos de todos los documentos, esto es equivalente a ejecutar la siguiente instrucción de __SQL__:
 
    ```sql
    SELECT *
    FROM users;
    ```
    
-   Para mostrar algún campo en específico, como lo hacíamos en SQL, usaremos proyecciones. Para usar una proyección, hay que dar clic en el botón `OPTIONS`. Se abrirá un formulario, llenaremos el campo llamado `PROJECT`. 
+   Para mostrar algún campo en específico, como lo hacíamos en __SQL__, usaremos proyecciones. Para usar una proyección, hay que dar clic en el botón `OPTIONS`. Se abrirá un formulario, llenaremos el campo llamado `PROJECT`. 
    
-   En las bases de datos relacionales, la forma de comunicarnos con la base es mediante SQL, en MongoDB lo haremos a través de JSON. De esta forma, para proyectar los datos, usaremos un JSON, separando cada campo deseado, con un valor de 1. Por ejemplo, si queremos obtener únicamente el nombre y correo del usuario, escribimos lo siguiente.
+   En las bases de datos relacionales, la forma de comunicarnos con la base es mediante __SQL__, en __MongoDB__ lo haremos a través de __JSON__. De esta forma, para proyectar los datos, usaremos un __JSON__, separando cada campo deseado, con un valor de 1. Por ejemplo, si queremos obtener únicamente el nombre y correo del usuario, escribimos lo siguiente.
    
    ```json
    {name:1, email:1}
@@ -54,6 +54,6 @@
 
 **¡Felicidades! Haz realizado tu primera consulta en una base de datos con MongoDB**
 
-[`Anterior`](../Readme.md#colecciones-documentos-y-proyecciones) | [`Siguiente`](../Reto-01/Readme.md)
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-01/Readme.md)
 
 </div>
