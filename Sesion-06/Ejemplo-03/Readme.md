@@ -68,6 +68,6 @@ Por ejemplo, queremos saber cuál es la propiedad con mayor número de servicios
    
    ![imagen](imagenes/s5e34.png)
 
-[`Anterior`](../Readme.md#introducción-a-las-agregaciones) | [`Siguiente`](../Reto-03/Readme.md)
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-03/Readme.md)
 
 </div>

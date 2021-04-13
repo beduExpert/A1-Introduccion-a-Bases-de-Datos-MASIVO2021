@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejercicios`
+[`Introducción a Bases de Datos`](../../REAMDE.md) > [`Sesión 06`](../Readme.md) > `Ejercicios`
 	
 ## Ejercicios Sesión 6
 
@@ -22,5 +22,6 @@ El ejercicio consiste en obtener todas las publicaciones que tengan 50 o más co
 
 **¡¡¡MUCHA SUERTE!!!**
 
+<br/>
 
-[`Anterior`](../Readme.md#3-proyecto-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)
