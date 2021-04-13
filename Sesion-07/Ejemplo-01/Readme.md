@@ -47,7 +47,7 @@ Para obtener el costo de recamara de cada propiedad, debemos dividir el precio e
    
    ![imagen](imagenes/s6e13.png)
    
-Ahora agruparemos el total de racámaras y el costo de recámara de todos los documentos usando una agregación `$group`. Dado que no estamos agrupando por un campo en específico, si no por todos los documentos, colocamos el valor `null` en el campo de agrupamiento.
+Ahora agruparemos el total de recámaras y el costo de recámara de todos los documentos usando una agregación `$group`. Dado que no estamos agrupando por un campo en específico, si no por todos los documentos, colocamos el valor `null` en el campo de agrupamiento.
    
    ```json
    {
@@ -77,4 +77,4 @@ Ahora, para obtener el costo promedio, debemos dividir el total entre el número
    
    ![imagen](imagenes/s6e15.png)
    
-[`Anterior`](../Readme.md#agrupamientos) | [`Siguiente`](../Reto-01/Readme.md)   
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-01/Readme.md)   

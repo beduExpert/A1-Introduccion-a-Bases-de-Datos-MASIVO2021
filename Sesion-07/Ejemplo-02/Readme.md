@@ -14,7 +14,7 @@
 
 ### 3. Desarrollo :rocket:
 
-En la base de datos, existen varias colecciones que pueden asociarse. Por ejemplo la colección `comments` tiene la siguiente estructura:
+En la base de datos que estamos usando, existen varias colecciones que pueden asociarse. Por ejemplo la colección `comments` tiene la siguiente estructura:
 
 ![imagen](imagenes/s6e21.png)
 
@@ -24,7 +24,7 @@ Sin embargo, para conocer la película sobre la cual se hizo el comentario, es n
 
 Para facilitar esta búsqueda podemos usar una agregación `$lookup` que permite asociar dos colecciones. Algo similar a la operación `JOIN` de `SQL`.
 
-Agregamos la agregación `$lookup` con el siguiente json:
+Definimos la agregación `$lookup` con el siguiente json:
 
 ```json
 {
@@ -35,7 +35,7 @@ Agregamos la agregación `$lookup` con el siguiente json:
 }
 ```
 
-Esto nos indica que la colección actual (`comments`) se asociará con la conexión `movies` que el campo que tomaremos para asociarlas será `comments.movie_id` y `movies._id` respectivamente y que los resultados serán almacenados en un arreglo llamado `pelicula`.
+Esto nos indica que la colección actual (`comments`) se asociará con la conexión `movies`, que el campo que tomaremos para asociarlas será `comments.movie_id` y `movies._id` respectivamente y que los resultados serán almacenados en un arreglo llamado `pelicula`.
 
 ![imagen](imagenes/s6e23.png)
 
@@ -68,9 +68,13 @@ Elegimos únicamente los campos de interés, primero extrayendo el nombre del ob
 }
 ```
 
-**No cierres, este *pipeline*, pues lo usaremos más adelante.**
+---
+
+:warning: **No cierres, este *pipeline*, pues lo usaremos más adelante.**
+
+---
 
 ![imagen](imagenes/s6e24.png)
 
-[`Anterior`](../Readme.md#asociación-de-colecciones) | [`Siguiente`](../Reto-02/Readme.md)   
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-02/Readme.md)   
 
