@@ -37,7 +37,7 @@ Para este reto usarás un conjunto de datos proveniente de un reporte de la OMS.
 
 COVID-19 (Coronavirus Disease 2019), conocida como neumonía por coronavirus es una enfermedad infecciosa causada por el SARS-Cov-2. Se detectó por primera ve en la ciudad china de Wihan en diciembre de 2019. Habiendo llegado a más de 100 territorios, el 11 de marzo de 2020, la OMS la declaró pandemia.
 
-El conjunto de dato que usarás para este reto proviene de la plataforma  *Coronavirus COVID-19 Global Cases by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)*.
+El conjunto de datos que usarás para este reto proviene de la plataforma  *Coronavirus COVID-19 Global Cases by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU)*.
 
 - [**`RETO 3`**](Reto-03/Readme.md)
 

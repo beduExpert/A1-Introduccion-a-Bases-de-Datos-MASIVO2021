@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 8`](../Readme.md) > Reto 2
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 8`](../Readme.md) > Reto 2
 
 ## Reto 2: Pandemia A (H1N1)
 
@@ -35,4 +35,4 @@
 
 <br/>
 
-[`Anterior`](../Readme.md#pandemia-a-h1n1) | [`Siguiente`](../Readme.md#pandemia-covid-19)   
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)   

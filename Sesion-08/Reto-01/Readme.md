@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 8`](../Readme.md) > Reto 1
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 8`](../Readme.md) > Reto 1
 
 ## Reto 1: Starbucks
 
@@ -30,4 +30,4 @@
 
 <br/>
 
-[`Anterior`](../Readme.md#starbucks) | [`Siguiente`](../Readme.md#pandemia-a-h1n1)   
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)   
