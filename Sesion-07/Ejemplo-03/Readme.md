@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > `Ejemplo 3`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 07`](../Readme.md) > `Ejemplo 3`
 
 ## Ejemplo 3: Generación de vistas
 
@@ -32,4 +32,4 @@ Si la abrimos, podemos notar que la consulta se realiza como a cualquier otra co
 
 ![imagen](imagenes/s6e34.png)
 
-[`Anterior`](../Readme.md#generación-de-vistas) | [`Siguiente`](../Reto-03/Readme.md)   
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-03/Readme.md)   

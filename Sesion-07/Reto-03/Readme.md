@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > `Reto 3`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 07`](../Readme.md) > `Reto 3`
 	
 ## Reto 3: Generación de vistas
 
@@ -14,6 +14,6 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Usando el *pipeline* que generaste en el Reto 2, genera la vista correspondiente.
+Usando el *pipeline* que generaste en el Reto 2, genera la vista correspondiente.
 
-[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)   
+[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md)   

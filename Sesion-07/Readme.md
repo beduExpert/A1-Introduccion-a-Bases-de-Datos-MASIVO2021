@@ -68,8 +68,6 @@ Una vez creada la vista, podemos consultarla como a cualquier otra colección.
 
 > *Explicar la pantalla de __Compass__ en la que se generan las vistas.*   
 
-> *__Al finalizar la sesión, es importante pedirle a los alumnos que eliminen las vistas generadas, con el fin de no saturar la base de datos__*
-
 - [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
 - [**`RETO 3`**](Reto-03/Readme.md)
 
@@ -80,10 +78,6 @@ Una vez creada la vista, podemos consultarla como a cualquier otra colección.
 Aplica lo todo lo que aprendiste durante la sesión con estos ejercicios.
 
 - [**`EJERCICIOS SESIÓN 7`**](Ejercicios/Readme.md)
-
-> *__Importante:__ Los ejercicios se plantean a manera de propuesta y pueden cambiarse de acuerdo con los tiempos de cada grupo y los temas en que la experta(o) considere debe profundizarse más.*   
-
-> *Se sugiere realizar estos ejercicios en equipo.*
 
 </br>
 

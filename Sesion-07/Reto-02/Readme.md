@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > `Reto 2`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 07`](../Readme.md) > `Reto 2`
 	
 ## Reto 2: Asociación de colecciones
 
@@ -16,7 +16,11 @@
 
 Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario. Construye un pipeline que genere como resultado estos datos.
 
-**NO CIERES ESTE *PIPELINE* PUES LO USAREMOS MÁS ADELANTE**
+---
+
+:warning: **NO CIERES ESTE *PIPELINE* PUES LO USAREMOS MÁS ADELANTE**
+
+---
 
 <details><summary>Solución</summary>
 <p>
@@ -70,6 +74,6 @@ Posteriormente, obtenemos el objeto del arreglo, su campo `password` y finalment
 
 <br/>
 
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#generación-de-vistas)   
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md)   
 
 </div>

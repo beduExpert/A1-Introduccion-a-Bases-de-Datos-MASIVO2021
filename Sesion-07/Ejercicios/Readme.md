@@ -16,7 +16,7 @@
 
 Continuaremos trabajando con la base de datos de películas y sus comentarios.
 
-El ejercicio consiste en obtener, por país, el número de películas que hay de cada genero. Un ejemplo de salida, en formato de tabla,sería:
+El ejercicio consiste en obtener, por país, el número de películas que hay de cada género. Un ejemplo de salida, en formato de tabla, sería:
 
 | pais | genero | peliculas |
 | ---- | ------ | --------- |
@@ -26,4 +26,4 @@ El ejercicio consiste en obtener, por país, el número de películas que hay de
 
 **¡¡¡MUCHA SUERTE!!!**
 
-[`Anterior`](../Readme.md#3-Ejercicios-hammer) | [`Siguiente`](../Readme.md#4-postwork-memo)   
+[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)   

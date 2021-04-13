@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 07`](../Readme.md) > `Reto 1`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 07`](../Readme.md) > `Reto 1`
 	
 ## Reto 1: Agrupamientos
 
@@ -84,4 +84,4 @@ Con base en el ejemplo 1, modifica el agrupamiento para que muestre el costo pro
 
 <br/>
 
-[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md#asociación-de-colecciones)   
+[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md)   
