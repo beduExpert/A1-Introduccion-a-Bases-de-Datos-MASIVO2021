@@ -17,7 +17,7 @@
 #### <ins>Bases de Datos Relacionales vs. No Relacionales</ins>
 <img src="imagenes/imagen.jpeg" align="right" height="200" width="300">
 
-Comcencemos la sesión con un pequeño debate. :open_mouth:
+Comencemos la sesión con un pequeño debate. :open_mouth:
 
 1. Para comenzar contesta las siguientes preguntas:
 
