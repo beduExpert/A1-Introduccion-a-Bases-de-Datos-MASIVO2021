@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Ejemplo 2`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 06`](../Readme.md) > `Ejemplo 2`
 
 ## Ejemplo 2: Notación Punto y arreglos
 
@@ -40,7 +40,7 @@
 
    Esta es una consulta más compleja que las anteriores, por lo que la construiremos por partes y luego la juntaremos.
 
-   - Publicaciones con un costro menor a 100.
+   - Publicaciones con un costo menor a 100.
    
       ```json
       {price: {$lte: 100}}
@@ -77,6 +77,6 @@
 
    ![imagen](imagenes/s5e23.png)
 
-[`Anterior`](../Readme.md#notación-punto-y-arreglos) | [`Siguiente`](../Reto-02/Readme.md)
+[`Anterior`](../Readme.md) | [`Siguiente`](../Reto-02/Readme.md)
 
 </div>

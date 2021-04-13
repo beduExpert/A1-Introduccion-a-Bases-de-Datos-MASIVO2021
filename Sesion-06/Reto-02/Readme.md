@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Reto 2`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 06`](../Readme.md) > `Reto 2`
 	
 ## Reto 2: Notación punto y arreglos
 
@@ -30,6 +30,6 @@ Usando la colección `sample_airbnb.listingsAndReviews`, agrega un filtro que pe
 
 <br/>
 
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md#introducción-a-las-agregaciones)
+[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>

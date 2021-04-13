@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 6`
+[`Introducción a Bases de Datos`](../README.md) > `Sesión 6`
 
 ## Sesión 6: Consultas en MongoDB
 

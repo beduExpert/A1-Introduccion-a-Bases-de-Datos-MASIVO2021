@@ -1,4 +1,4 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 06`](../Readme.md) > `Reto 3`
+[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 06`](../Readme.md) > `Reto 3`
 	
 ## Reto 3: Introducción a las agregaciones
 
@@ -51,6 +51,6 @@ Usando la colección `sample_airbnb.listingsAndReviews`, mediante el uso de agre
 
 <br/>
 
-[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md#3-proyecto-hammer)
+[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>
