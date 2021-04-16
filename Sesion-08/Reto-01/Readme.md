@@ -22,7 +22,7 @@
 
 1. Carga los datos en la base de datos que elegiste y revisa que éstos se muestren correctamente.
 
-1. Usando la latitud y longitud de tu posición actual, encuenta el Starbucks más cercano a tu posición. Para conocer tu posición actual puedes usar Google Maps para, sólo debes copiar los datos de la URL.
+1. Usando la latitud y longitud de tu posición actual, encuenta el Starbucks más cercano. Para conocer tu posición actual puedes utilizar Google Maps para esto, sólo debes copiar los datos de la URL.
 
    ![imagen](imagenes/imagen1.png)
 

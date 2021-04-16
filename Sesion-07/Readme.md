@@ -62,7 +62,7 @@ De la misma forma en que __SQL__ incluye distintos tipos de *join*. En __MongoDB
 #### <ins>Generación de vistas</ins>
 <img src="imagenes/imagen3.png" align="right" height="150" width="150">
 
-En __MongoDB__ también es posible generar vistas que almacenen el resultado de las distintas consulas. Para generar una vista usaremos __Compass__.
+En __MongoDB__ también es posible generar vistas que almacenen el resultado de las distintas consultas. Para generar una vista usaremos __Compass__.
 
 Una vez creada la vista, podemos consultarla como a cualquier otra colección.
 
