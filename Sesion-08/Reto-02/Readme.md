@@ -30,8 +30,8 @@
    - ¿Cuál fue el país con el menor número de casos?
    - ¿Cuál fue el número de muertes promedio?
    - ¿Cuál fue el número de casos promedio?
-   - Top 5 de países con más muertes
-   - Top 5 de países con menos muertes
+   - Top 5 de países con más muertes.
+   - Top 5 de países con menos muertes.
 
 <br/>
 

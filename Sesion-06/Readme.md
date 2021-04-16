@@ -40,7 +40,7 @@ Con esta notación podemos obtener los campos de un objeto representado en __JSO
 #### <ins>Introducción a las agregaciones</ins>
 <img src="imagenes/imagen3.png" align="right" height="200" width="300">
 
-Una agregación se compone de un conjunto de *capas* que en conjunto realizan consultas sobre una colección de documentos. Cada capa puede aplicar nuevos filtros o modificaciones a la capa anterior. Al flujo de cambios entre las distintas capas se le conoce como *pipeline*.
+Una agregación se compone de un conjunto de *capas* que juntas realizan consultas sobre una colección de documentos. Cada capa puede aplicar nuevos filtros o modificaciones a la capa anterior. Al flujo de cambios entre las distintas capas se le conoce como *pipeline*.
 
 El principio de cada *pipeline* siempre es la colección completa.
 

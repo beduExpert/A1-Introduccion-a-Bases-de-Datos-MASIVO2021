@@ -18,7 +18,7 @@ Usando las colecciones `comments` y `users`, se requiere conocer el correo y con
 
 ---
 
-:warning: **NO CIERES ESTE *PIPELINE* PUES LO USAREMOS MÁS ADELANTE**
+:warning: **NO CIERRES ESTE *PIPELINE* PUES LO USAREMOS MÁS ADELANTE**
 
 ---
 
