@@ -116,7 +116,7 @@ Todas las consultas que realices deberás mantenerlas dentro del MongoDB Compass
 
 10. Obtén la empresa con el menor número de empleados.
 
-    ```json
+   ```json
    /* Filter. */
    {number_of_employees: {$ne:null}}
    /* Ordenamiento. */
